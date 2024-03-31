@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lesson_1
+namespace Lesson1
 {
     internal class PracticalTasks
     {
