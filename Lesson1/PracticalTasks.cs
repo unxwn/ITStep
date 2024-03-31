@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lesson_1
 {
-    internal class Practice
+    internal class PracticalTasks
     {
         static void Main(string[] args)
         {
             // Завдання 1. Виведіть на екран цитату Б'ярна Страуструпа
+            Console.WriteLine("Task 1");
             Console.WriteLine("It's easy to win forgiveness for being wrong;\n" +
                 "being right is what gets you into real trouble.\n" +
                 "Bjarne Stroustrup\n\n");
@@ -19,6 +15,7 @@ namespace Lesson_1
             /*Завдання 2. Користувач вводить з клавіатури п'ять чисел. 
             Необхідно знайти суму чисел, максимум і мінімум з п'яти чисел,
             добуток чисел. Результат обчислень вивести на екран.*/
+            Console.WriteLine("Task 2");
             const int arrSize = 5;
             int[] numbers = new int[arrSize];
             for (int i = 0; i < arrSize; i++)
@@ -78,11 +75,11 @@ namespace Lesson_1
             /*Завдання 3. Користувач з клавіатури вводить шестизначне число.
             Необхідно перевернути число і відобразити результат.
             Наприклад, якщо введено 341256, результат 652143.*/
-            Console.Write("\n");
+            Console.WriteLine("\n\nTask 3");
             string numStr;
             do
             {
-                Console.Write("\nEnter your number: ");
+                Console.Write("Enter your number: ");
                 numStr = Console.ReadLine();
             } while (numStr.Length != 6);
 
@@ -102,10 +99,11 @@ namespace Lesson_1
             Console.WriteLine();
 
             /*Завдання 4. Числа Фібоначчі*/
+            Console.WriteLine("\n\nTask 4");
             int prevNum = 0, currNum = 0, nextNum = 1;
             int downLim, upLim; // діапазон
 
-            Console.Write("\n\nWrite down limit of range: ");
+            Console.Write("Write down limit of range: ");
             downLim = int.Parse(Console.ReadLine());
             while (downLim < 0)
             {
@@ -138,6 +136,7 @@ namespace Lesson_1
             числа від A до B включно; кожне число має виводитися у
             новому рядку; при цьому кожне число має виводитися у
             кількість разів, рівну його значенню*/
+            Console.WriteLine("Task 5");
             uint A, B;
 
             Console.WriteLine("Write A: ");
@@ -160,11 +159,12 @@ namespace Lesson_1
 
             /*Завдання 6. Користувач з клавіатури вводить довжину лінії, символ
             заповнювач, напрямок лінії (горизонтальна, вертикальна).*/
+            Console.WriteLine("\n\nTask 6");
             uint lineLenght;
             char placeholder;
             bool direct; // true - horizontal, false vertical
 
-            Console.WriteLine("\n\nWrite length of line: ");
+            Console.WriteLine("Write length of line: ");
             lineLenght = uint.Parse(Console.ReadLine());
 
             Console.WriteLine("Write placeholdaer: ");
@@ -185,6 +185,7 @@ namespace Lesson_1
                         break;
                 }
             }
+            Console.WriteLine();
         }
     }
 }
