@@ -1,0 +1,14 @@
+D:\ITs\C# studying\Lesson2\bin\Debug\Lesson2.exe.config
+D:\ITs\C# studying\Lesson2\bin\Debug\Lesson2.exe
+D:\ITs\C# studying\Lesson2\bin\Debug\Lesson2.pdb
+D:\ITs\C# studying\Lesson2\obj\Debug\Lesson2.csproj.AssemblyReference.cache
+D:\ITs\C# studying\Lesson2\obj\Debug\Lesson2.csproj.CoreCompileInputs.cache
+D:\ITs\C# studying\Lesson2\obj\Debug\Lesson2.exe
+D:\ITs\C# studying\Lesson2\obj\Debug\Lesson2.pdb
+D:\ITs\C# studying\Lesson2\PracticalTasks\bin\Debug\Lesson2.exe.config
+D:\ITs\C# studying\Lesson2\PracticalTasks\bin\Debug\Lesson2.exe
+D:\ITs\C# studying\Lesson2\PracticalTasks\bin\Debug\Lesson2.pdb
+D:\ITs\C# studying\Lesson2\PracticalTasks\obj\Debug\Lesson2.csproj.AssemblyReference.cache
+D:\ITs\C# studying\Lesson2\PracticalTasks\obj\Debug\Lesson2.csproj.CoreCompileInputs.cache
+D:\ITs\C# studying\Lesson2\PracticalTasks\obj\Debug\Lesson2.exe
+D:\ITs\C# studying\Lesson2\PracticalTasks\obj\Debug\Lesson2.pdb
