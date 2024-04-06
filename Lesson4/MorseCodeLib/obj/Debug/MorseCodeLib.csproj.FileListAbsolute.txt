@@ -1,0 +1,6 @@
+D:\ITs\C# studying\Lesson4\MorseCodeLib\bin\Debug\MorseCodeLib.dll
+D:\ITs\C# studying\Lesson4\MorseCodeLib\bin\Debug\MorseCodeLib.pdb
+D:\ITs\C# studying\Lesson4\MorseCodeLib\obj\Debug\MorseCodeLib.csproj.AssemblyReference.cache
+D:\ITs\C# studying\Lesson4\MorseCodeLib\obj\Debug\MorseCodeLib.csproj.CoreCompileInputs.cache
+D:\ITs\C# studying\Lesson4\MorseCodeLib\obj\Debug\MorseCodeLib.dll
+D:\ITs\C# studying\Lesson4\MorseCodeLib\obj\Debug\MorseCodeLib.pdb

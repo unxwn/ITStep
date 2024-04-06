@@ -1,0 +1,2 @@
+D:\ITs\C# studying\Lesson4\Homework4\obj\Debug\MorseCodeLib.csproj.AssemblyReference.cache
+D:\ITs\C# studying\Lesson4\Homework4\obj\Debug\MorseCodeLib.csproj.CoreCompileInputs.cache

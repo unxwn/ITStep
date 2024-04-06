@@ -1,0 +1,10 @@
+D:\ITs\C# studying\Lesson4\Homework4\bin\Debug\Homework4.exe.config
+D:\ITs\C# studying\Lesson4\Homework4\bin\Debug\Homework4.exe
+D:\ITs\C# studying\Lesson4\Homework4\bin\Debug\Homework4.pdb
+D:\ITs\C# studying\Lesson4\Homework4\bin\Debug\MorseCodeLib.dll
+D:\ITs\C# studying\Lesson4\Homework4\bin\Debug\MorseCodeLib.pdb
+D:\ITs\C# studying\Lesson4\Homework4\obj\Debug\Homework4.csproj.AssemblyReference.cache
+D:\ITs\C# studying\Lesson4\Homework4\obj\Debug\Homework4.csproj.CoreCompileInputs.cache
+D:\ITs\C# studying\Lesson4\Homework4\obj\Debug\Homework4.csproj.CopyComplete
+D:\ITs\C# studying\Lesson4\Homework4\obj\Debug\Homework4.exe
+D:\ITs\C# studying\Lesson4\Homework4\obj\Debug\Homework4.pdb
