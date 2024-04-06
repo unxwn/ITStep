@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Practice\TasksLibrary\TasksLibrary.csproj">
+    <ProjectReference Include="..\PracticeLibrary\PracticeLibrary.csproj">
       <Project>{6689f77c-9172-40b0-b382-1ec45c18ea67}</Project>
-      <Name>TasksLibrary</Name>
+      <Name>PracticeLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice4", "Practice4.csproj", "{77221AF7-F18D-439C-A996-DD11D84507CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksLibrary", "..\Practice\TasksLibrary\TasksLibrary.csproj", "{6689F77C-9172-40B0-B382-1EC45C18EA67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeLibrary", "..\PracticeLibrary\PracticeLibrary.csproj", "{6689F77C-9172-40B0-B382-1EC45C18EA67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
