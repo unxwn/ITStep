@@ -1,0 +1,6 @@
+D:\ITs\C# studying\Lesson4\Practice\TasksLibrary\bin\Debug\TasksLibrary.dll
+D:\ITs\C# studying\Lesson4\Practice\TasksLibrary\bin\Debug\TasksLibrary.pdb
+D:\ITs\C# studying\Lesson4\Practice\TasksLibrary\obj\Debug\TasksLibrary.csproj.AssemblyReference.cache
+D:\ITs\C# studying\Lesson4\Practice\TasksLibrary\obj\Debug\TasksLibrary.csproj.CoreCompileInputs.cache
+D:\ITs\C# studying\Lesson4\Practice\TasksLibrary\obj\Debug\TasksLibrary.dll
+D:\ITs\C# studying\Lesson4\Practice\TasksLibrary\obj\Debug\TasksLibrary.pdb

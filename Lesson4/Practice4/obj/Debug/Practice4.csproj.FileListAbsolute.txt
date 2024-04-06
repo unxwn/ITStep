@@ -1,0 +1,10 @@
+D:\ITs\C# studying\Lesson4\Practice4\bin\Debug\Practice4.exe.config
+D:\ITs\C# studying\Lesson4\Practice4\bin\Debug\Practice4.exe
+D:\ITs\C# studying\Lesson4\Practice4\bin\Debug\Practice4.pdb
+D:\ITs\C# studying\Lesson4\Practice4\bin\Debug\TasksLibrary.dll
+D:\ITs\C# studying\Lesson4\Practice4\bin\Debug\TasksLibrary.pdb
+D:\ITs\C# studying\Lesson4\Practice4\obj\Debug\Practice4.csproj.AssemblyReference.cache
+D:\ITs\C# studying\Lesson4\Practice4\obj\Debug\Practice4.csproj.CoreCompileInputs.cache
+D:\ITs\C# studying\Lesson4\Practice4\obj\Debug\Practice4.csproj.CopyComplete
+D:\ITs\C# studying\Lesson4\Practice4\obj\Debug\Practice4.exe
+D:\ITs\C# studying\Lesson4\Practice4\obj\Debug\Practice4.pdb
