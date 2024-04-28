@@ -1,0 +1,7 @@
+D:\ITs\C# studying\Lesson8\Practice8\bin\Debug\Practice8.exe.config
+D:\ITs\C# studying\Lesson8\Practice8\bin\Debug\Practice8.exe
+D:\ITs\C# studying\Lesson8\Practice8\bin\Debug\Practice8.pdb
+D:\ITs\C# studying\Lesson8\Practice8\obj\Debug\Practice8.csproj.AssemblyReference.cache
+D:\ITs\C# studying\Lesson8\Practice8\obj\Debug\Practice8.csproj.CoreCompileInputs.cache
+D:\ITs\C# studying\Lesson8\Practice8\obj\Debug\Practice8.exe
+D:\ITs\C# studying\Lesson8\Practice8\obj\Debug\Practice8.pdb
