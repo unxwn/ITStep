@@ -1,0 +1,7 @@
+D:\ITs\C# studying\Lesson9\Practice9\obj\Debug\Practice9.csproj.AssemblyReference.cache
+D:\ITs\C# studying\Lesson9\Practice9\obj\Debug\Practice9.csproj.CoreCompileInputs.cache
+D:\ITs\C# studying\Lesson9\Practice9\bin\Debug\Practice9.exe.config
+D:\ITs\C# studying\Lesson9\Practice9\bin\Debug\Practice9.exe
+D:\ITs\C# studying\Lesson9\Practice9\bin\Debug\Practice9.pdb
+D:\ITs\C# studying\Lesson9\Practice9\obj\Debug\Practice9.exe
+D:\ITs\C# studying\Lesson9\Practice9\obj\Debug\Practice9.pdb
