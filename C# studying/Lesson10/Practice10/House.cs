@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Practice10
 {
-    public class House : IEnumerable
+    internal class House : IEnumerable
     {
         private readonly Dictionary<int, Flat> flats = new Dictionary<int, Flat>();
 

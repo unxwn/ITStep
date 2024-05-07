@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Practice10
 {
-    public class Flat : IEnumerable
+    internal class Flat : IEnumerable
     {
         private readonly List<string> residents = new List<string>();
 

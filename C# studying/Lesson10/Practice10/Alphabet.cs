@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Practice10
 {
-    public class Alphabet : IEnumerable
+    internal class Alphabet : IEnumerable
     {
         private readonly List<char> letters = new List<char> { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
 
