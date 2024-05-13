@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Car.cs" />
+=======
+>>>>>>> d04686ce36a3f3720cbb6285d6e3e33a2525f5cf
     <Compile Include="Player.cs" />
     <Compile Include="FootballTeam.cs" />
     <Compile Include="Program.cs" />

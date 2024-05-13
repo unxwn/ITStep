@@ -1,5 +1,8 @@
 ﻿using System;
+<<<<<<< HEAD
 using System.Collections.Generic;
+=======
+>>>>>>> d04686ce36a3f3720cbb6285d6e3e33a2525f5cf
 
 namespace Homework10
 {
@@ -17,6 +20,7 @@ namespace Homework10
             {
                 Console.WriteLine(player);
             }
+<<<<<<< HEAD
 
             Console.WriteLine();
             Console.WriteLine();
@@ -36,6 +40,8 @@ namespace Homework10
             {
                 Console.WriteLine(car);
             }
+=======
+>>>>>>> d04686ce36a3f3720cbb6285d6e3e33a2525f5cf
         }
     }
 }
