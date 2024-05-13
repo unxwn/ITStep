@@ -5,3 +5,10 @@ D:\ITs\C# studying\Lesson10\Practice10\obj\Debug\Practice10.csproj.AssemblyRefer
 D:\ITs\C# studying\Lesson10\Practice10\obj\Debug\Practice10.csproj.CoreCompileInputs.cache
 D:\ITs\C# studying\Lesson10\Practice10\obj\Debug\Practice10.exe
 D:\ITs\C# studying\Lesson10\Practice10\obj\Debug\Practice10.pdb
+D:\ITStep\C# studying\Lesson10\Practice10\bin\Debug\Practice10.exe.config
+D:\ITStep\C# studying\Lesson10\Practice10\bin\Debug\Practice10.exe
+D:\ITStep\C# studying\Lesson10\Practice10\bin\Debug\Practice10.pdb
+D:\ITStep\C# studying\Lesson10\Practice10\obj\Debug\Practice10.csproj.AssemblyReference.cache
+D:\ITStep\C# studying\Lesson10\Practice10\obj\Debug\Practice10.csproj.CoreCompileInputs.cache
+D:\ITStep\C# studying\Lesson10\Practice10\obj\Debug\Practice10.exe
+D:\ITStep\C# studying\Lesson10\Practice10\obj\Debug\Practice10.pdb
