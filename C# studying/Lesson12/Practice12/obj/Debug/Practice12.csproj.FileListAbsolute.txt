@@ -1,0 +1,10 @@
+D:\ITStep\C# studying\Lesson12\Practice12\bin\Debug\Practice12.exe.config
+D:\ITStep\C# studying\Lesson12\Practice12\bin\Debug\Practice12.exe
+D:\ITStep\C# studying\Lesson12\Practice12\bin\Debug\Practice12.pdb
+D:\ITStep\C# studying\Lesson12\Practice12\bin\Debug\Newtonsoft.Json.dll
+D:\ITStep\C# studying\Lesson12\Practice12\bin\Debug\Newtonsoft.Json.xml
+D:\ITStep\C# studying\Lesson12\Practice12\obj\Debug\Practice12.csproj.AssemblyReference.cache
+D:\ITStep\C# studying\Lesson12\Practice12\obj\Debug\Practice12.csproj.CoreCompileInputs.cache
+D:\ITStep\C# studying\Lesson12\Practice12\obj\Debug\Practice12.csproj.CopyComplete
+D:\ITStep\C# studying\Lesson12\Practice12\obj\Debug\Practice12.exe
+D:\ITStep\C# studying\Lesson12\Practice12\obj\Debug\Practice12.pdb
