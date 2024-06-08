@@ -1,0 +1,7 @@
+D:\ITStep\C# studying\Lesson14\Practice14\bin\Debug\Practice14.exe.config
+D:\ITStep\C# studying\Lesson14\Practice14\bin\Debug\Practice14.exe
+D:\ITStep\C# studying\Lesson14\Practice14\bin\Debug\Practice14.pdb
+D:\ITStep\C# studying\Lesson14\Practice14\obj\Debug\Practice14.csproj.AssemblyReference.cache
+D:\ITStep\C# studying\Lesson14\Practice14\obj\Debug\Practice14.csproj.CoreCompileInputs.cache
+D:\ITStep\C# studying\Lesson14\Practice14\obj\Debug\Practice14.exe
+D:\ITStep\C# studying\Lesson14\Practice14\obj\Debug\Practice14.pdb
