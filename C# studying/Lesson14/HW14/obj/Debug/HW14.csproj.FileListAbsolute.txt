@@ -1,0 +1,7 @@
+D:\ITStep\C# studying\Lesson14\HW14\bin\Debug\HW14.exe.config
+D:\ITStep\C# studying\Lesson14\HW14\bin\Debug\HW14.exe
+D:\ITStep\C# studying\Lesson14\HW14\bin\Debug\HW14.pdb
+D:\ITStep\C# studying\Lesson14\HW14\obj\Debug\HW14.csproj.AssemblyReference.cache
+D:\ITStep\C# studying\Lesson14\HW14\obj\Debug\HW14.csproj.CoreCompileInputs.cache
+D:\ITStep\C# studying\Lesson14\HW14\obj\Debug\HW14.exe
+D:\ITStep\C# studying\Lesson14\HW14\obj\Debug\HW14.pdb
