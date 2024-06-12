@@ -1,5 +1,9 @@
 {
   "DictName": "test",
-  "Words": {},
-  "WordsCount": 0
+  "Words": {
+    "test": [
+      "test"
+    ]
+  },
+  "WordsCount": 1
 }

@@ -1,4 +1,6 @@
 ﻿
+//var 
+//StreamWrite names
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,16 +20,16 @@ namespace Exam1
 
     internal class Menu
     {
-        private const string DICTIONARIES_FILE = "dictionaries.json";
+        private const string DICTIONARIES_FILENAME = "dictionaries.json";
         private List<string> dictionaryNames = new List<string>();
         private List<LangDictionary> dictionaries = new List<LangDictionary>();
         private Dictionary<string, bool> modifiedDictionaries = new Dictionary<string, bool>();
 
         private readonly string[] patternMenu1 = { new string('*', 8), "Menu" };
-        
+
         public Menu()
         {
-            LoadDictionaryNames();
+            dictionaryNames = JsonConvert.DeserializeObject<List<string>>(FileUtils.LoadJson(DICTIONARIES_FILENAME));
             LoadDictionaries();
         }
 
@@ -53,7 +55,7 @@ namespace Exam1
                     Console.WriteLine("\nWrite a number!");
                     continue;
                 }
-                
+
                 switch (choice)
                 {
                     case 1:
@@ -72,51 +74,28 @@ namespace Exam1
             }
         }
 
-        private void LoadDictionaryNames()
-        {
-            if (File.Exists(DICTIONARIES_FILE))
-            {
-                using (StreamReader reader = new StreamReader(DICTIONARIES_FILE))
-                {
-                    string json = reader.ReadToEnd();
-                    dictionaryNames = JsonConvert.DeserializeObject<List<string>>(json);
-                }
-            }
-        }
-
         private void LoadDictionaries()
         {
-            foreach (var name in dictionaryNames)
+            foreach (string name in dictionaryNames)
             {
-                LangDictionary dictionary = LoadDictionary(name);
-                if (dictionary != null)
+                try
                 {
-                    dictionaries.Add(dictionary);
+                    LangDictionary dictionary = JsonConvert.DeserializeObject<LangDictionary>(FileUtils.LoadJson(name));
+                    if (dictionary != null)
+                    {
+                        dictionaries.Add(dictionary);
+                    }
+                    else { throw new NullReferenceException(); }
                 }
+                catch (FileNotFoundException ex) { Console.WriteLine($"Error: file {ex.FileName} not found."); }
+                catch (NullReferenceException) { Console.WriteLine($"Dictionary \"{name}.json\" is empty."); }
             }
-        }
-
-        private LangDictionary LoadDictionary(string name)
-        {
-            string fileName = $"{name}.json";
-            if (File.Exists(fileName))
-            {   
-                using (StreamReader reader = new StreamReader(fileName))
-                {
-                    string json = reader.ReadToEnd();
-                    return JsonConvert.DeserializeObject<LangDictionary>(json);
-                }
-            } else { Console.WriteLine($"Error: Dictionary \"{fileName}\" not found"); }
-            return null;
         }
 
         private void SaveDictionaryNames()
         {
-            string json = JsonConvert.SerializeObject(dictionaryNames, Formatting.Indented);
-            using (StreamWriter writer = new StreamWriter(DICTIONARIES_FILE, false))
-            {
-                writer.Write(json);
-            }
+            string json = JsonUtils.Serialize(dictionaryNames);
+            FileUtils.SaveJson(DICTIONARIES_FILENAME, json);
         }
 
         private void PromptSaveModifiedDictionaries()
@@ -182,7 +161,8 @@ namespace Exam1
                 if (choice == 0)
                 {
                     Run();
-                } else
+                }
+                else
                 {
                     Console.WriteLine("\nWrite the correct number!");
                     ShowDictionaries();
@@ -232,14 +212,14 @@ namespace Exam1
             while (true)
             {
                 Console.WriteLine($"\n{patternMenu2[0]}{patternMenu2[1]}{patternMenu2[0]}");
+                Console.WriteLine($"Dictionary: {DictName}");
                 Console.WriteLine("1. View words in dictionary");
                 Console.WriteLine("2. Add word");
                 Console.WriteLine("3. Edit word");
                 Console.WriteLine("4. Delete word");
                 Console.WriteLine("5. Search translation by original word");
                 Console.WriteLine("6. Search original word by translation");
-                Console.WriteLine("7. Save dictionary");
-                Console.WriteLine("8. Return to main menu");
+                Console.WriteLine("7. Return to main menu");
                 Console.WriteLine(new string('-', 38) + "\n");
 
                 Console.Write("Make your choice: ");
@@ -266,9 +246,6 @@ namespace Exam1
                         SearchOriginal();
                         break;
                     case "7":
-                        SaveDictionary();
-                        break;
-                    case "8":
                         return;
                 }
             }
@@ -372,11 +349,8 @@ namespace Exam1
 
         public void SaveDictionary()
         {
-            string json = JsonConvert.SerializeObject(this, Formatting.Indented);
-            using (StreamWriter writer = new StreamWriter($"{DictName}.json", false))
-            {
-                writer.Write(json);
-            }
+            string json = JsonUtils.Serialize(this);
+            FileUtils.SaveJson(DictName, json);
             Console.WriteLine("\nDictionary successfully saved.");
         }
     }
