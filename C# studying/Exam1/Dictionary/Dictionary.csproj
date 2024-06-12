@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="FileUtils.cs" />
     <Compile Include="JsonUtils.cs" />
+    <Compile Include="LangDictionary.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

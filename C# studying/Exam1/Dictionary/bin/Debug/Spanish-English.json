@@ -1,0 +1,156 @@
+{
+  "DictName": "Spanish-English",
+  "Words": {
+    "Hola": [
+      "Hello"
+    ],
+    "Mundo": [
+      "World"
+    ],
+    "Libro": [
+      "Book"
+    ],
+    "Computadora": [
+      "Computer"
+    ],
+    "Árbol": [
+      "Tree"
+    ],
+    "Sol": [
+      "Sun"
+    ],
+    "Luna": [
+      "Moon"
+    ],
+    "Estrella": [
+      "Star"
+    ],
+    "Agua": [
+      "Water"
+    ],
+    "Fuego": [
+      "Fire"
+    ],
+    "Tierra": [
+      "Earth"
+    ],
+    "Cielo": [
+      "Sky"
+    ],
+    "Viento": [
+      "Wind"
+    ],
+    "Lluvia": [
+      "Rain"
+    ],
+    "Nieve": [
+      "Snow"
+    ],
+    "Montaña": [
+      "Mountain"
+    ],
+    "Río": [
+      "River"
+    ],
+    "Océano": [
+      "Ocean"
+    ],
+    "Lago": [
+      "Lake"
+    ],
+    "Bosque": [
+      "Forest"
+    ],
+    "Flor": [
+      "Flower"
+    ],
+    "Hierba": [
+      "Grass"
+    ],
+    "Pájaro": [
+      "Bird"
+    ],
+    "Animal": [
+      "Animal"
+    ],
+    "Pez": [
+      "Fish"
+    ],
+    "Insecto": [
+      "Insect"
+    ],
+    "Mariposa": [
+      "Butterfly"
+    ],
+    "Abeja": [
+      "Bee"
+    ],
+    "Hormiga": [
+      "Ant"
+    ],
+    "Araña": [
+      "Spider"
+    ],
+    "Serpiente": [
+      "Snake"
+    ],
+    "León": [
+      "Lion"
+    ],
+    "Tigre": [
+      "Tiger"
+    ],
+    "Elefante": [
+      "Elephant"
+    ],
+    "Perro": [
+      "Dog"
+    ],
+    "Gato": [
+      "Cat"
+    ],
+    "Ratón": [
+      "Mouse"
+    ],
+    "Vaca": [
+      "Cow"
+    ],
+    "Caballo": [
+      "Horse"
+    ],
+    "Cerdo": [
+      "Pig"
+    ],
+    "Oveja": [
+      "Sheep"
+    ],
+    "Pollo": [
+      "Chicken"
+    ],
+    "Pato": [
+      "Duck"
+    ],
+    "Ganso": [
+      "Goose"
+    ],
+    "Rana": [
+      "Frog"
+    ],
+    "Mono": [
+      "Monkey"
+    ],
+    "Oso": [
+      "Bear"
+    ],
+    "Lobo": [
+      "Wolf"
+    ],
+    "Zorro": [
+      "Fox"
+    ],
+    "Ciervo": [
+      "Deer"
+    ]
+  },
+  "WordsCount": 50
+}

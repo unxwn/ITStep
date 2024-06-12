@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.IO;
+﻿using System.IO;
 
 namespace Exam1
 {
@@ -26,6 +25,14 @@ namespace Exam1
             using (StreamWriter wr = new StreamWriter(fileName))
             {
                 wr.Write(json);
+            }
+        }
+
+        static public void Delete(string fileName)
+        {
+            if (File.Exists(fileName))
+            {
+                File.Delete(fileName);
             }
         }
     }

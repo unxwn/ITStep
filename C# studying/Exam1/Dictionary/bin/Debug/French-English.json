@@ -1,0 +1,156 @@
+{
+  "DictName": "French-English",
+  "Words": {
+    "Bonjour": [
+      "Hello"
+    ],
+    "Monde": [
+      "World"
+    ],
+    "Livre": [
+      "Book"
+    ],
+    "Ordinateur": [
+      "Computer"
+    ],
+    "Arbre": [
+      "Tree"
+    ],
+    "Soleil": [
+      "Sun"
+    ],
+    "Lune": [
+      "Moon"
+    ],
+    "Étoile": [
+      "Star"
+    ],
+    "Eau": [
+      "Water"
+    ],
+    "Feu": [
+      "Fire"
+    ],
+    "Terre": [
+      "Earth"
+    ],
+    "Ciel": [
+      "Sky"
+    ],
+    "Vent": [
+      "Wind"
+    ],
+    "Pluie": [
+      "Rain"
+    ],
+    "Neige": [
+      "Snow"
+    ],
+    "Montagne": [
+      "Mountain"
+    ],
+    "Rivière": [
+      "River"
+    ],
+    "Océan": [
+      "Ocean"
+    ],
+    "Lac": [
+      "Lake"
+    ],
+    "Forêt": [
+      "Forest"
+    ],
+    "Fleur": [
+      "Flower"
+    ],
+    "Herbe": [
+      "Grass"
+    ],
+    "Oiseau": [
+      "Bird"
+    ],
+    "Animal": [
+      "Animal"
+    ],
+    "Poisson": [
+      "Fish"
+    ],
+    "Insecte": [
+      "Insect"
+    ],
+    "Papillon": [
+      "Butterfly"
+    ],
+    "Abeille": [
+      "Bee"
+    ],
+    "Fourmi": [
+      "Ant"
+    ],
+    "Araignée": [
+      "Spider"
+    ],
+    "Serpent": [
+      "Snake"
+    ],
+    "Lion": [
+      "Lion"
+    ],
+    "Tigre": [
+      "Tiger"
+    ],
+    "Éléphant": [
+      "Elephant"
+    ],
+    "Chien": [
+      "Dog"
+    ],
+    "Chat": [
+      "Cat"
+    ],
+    "Souris": [
+      "Mouse"
+    ],
+    "Vache": [
+      "Cow"
+    ],
+    "Cheval": [
+      "Horse"
+    ],
+    "Cochon": [
+      "Pig"
+    ],
+    "Mouton": [
+      "Sheep"
+    ],
+    "Poulet": [
+      "Chicken"
+    ],
+    "Canard": [
+      "Duck"
+    ],
+    "Oie": [
+      "Goose"
+    ],
+    "Grenouille": [
+      "Frog"
+    ],
+    "Singe": [
+      "Monkey"
+    ],
+    "Ours": [
+      "Bear"
+    ],
+    "Loup": [
+      "Wolf"
+    ],
+    "Renard": [
+      "Fox"
+    ],
+    "Cerf": [
+      "Deer"
+    ]
+  },
+  "WordsCount": 50
+}

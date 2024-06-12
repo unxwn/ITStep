@@ -1,0 +1,156 @@
+{
+  "DictName": "German-English",
+  "Words": {
+    "Hallo": [
+      "Hello"
+    ],
+    "Welt": [
+      "World"
+    ],
+    "Buch": [
+      "Book"
+    ],
+    "Computer": [
+      "Computer"
+    ],
+    "Baum": [
+      "Tree"
+    ],
+    "Sonne": [
+      "Sun"
+    ],
+    "Mond": [
+      "Moon"
+    ],
+    "Stern": [
+      "Star"
+    ],
+    "Wasser": [
+      "Water"
+    ],
+    "Feuer": [
+      "Fire"
+    ],
+    "Erde": [
+      "Earth"
+    ],
+    "Himmel": [
+      "Sky"
+    ],
+    "Wind": [
+      "Wind"
+    ],
+    "Regen": [
+      "Rain"
+    ],
+    "Schnee": [
+      "Snow"
+    ],
+    "Berg": [
+      "Mountain"
+    ],
+    "Fluss": [
+      "River"
+    ],
+    "Ozean": [
+      "Ocean"
+    ],
+    "See": [
+      "Lake"
+    ],
+    "Wald": [
+      "Forest"
+    ],
+    "Blume": [
+      "Flower"
+    ],
+    "Gras": [
+      "Grass"
+    ],
+    "Vogel": [
+      "Bird"
+    ],
+    "Tier": [
+      "Animal"
+    ],
+    "Fisch": [
+      "Fish"
+    ],
+    "Insekt": [
+      "Insect"
+    ],
+    "Schmetterling": [
+      "Butterfly"
+    ],
+    "Biene": [
+      "Bee"
+    ],
+    "Ameise": [
+      "Ant"
+    ],
+    "Spinne": [
+      "Spider"
+    ],
+    "Schlange": [
+      "Snake"
+    ],
+    "Löwe": [
+      "Lion"
+    ],
+    "Tiger": [
+      "Tiger"
+    ],
+    "Elefant": [
+      "Elephant"
+    ],
+    "Hund": [
+      "Dog"
+    ],
+    "Katze": [
+      "Cat"
+    ],
+    "Maus": [
+      "Mouse"
+    ],
+    "Kuh": [
+      "Cow"
+    ],
+    "Pferd": [
+      "Horse"
+    ],
+    "Schwein": [
+      "Pig"
+    ],
+    "Schaf": [
+      "Sheep"
+    ],
+    "Huhn": [
+      "Chicken"
+    ],
+    "Ente": [
+      "Duck"
+    ],
+    "Gans": [
+      "Goose"
+    ],
+    "Frosch": [
+      "Frog"
+    ],
+    "Affe": [
+      "Monkey"
+    ],
+    "Bär": [
+      "Bear"
+    ],
+    "Wolf": [
+      "Wolf"
+    ],
+    "Fuchs": [
+      "Fox"
+    ],
+    "Hirsch": [
+      "Deer"
+    ]
+  },
+  "WordsCount": 50
+}
