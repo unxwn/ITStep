@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,13 +23,16 @@ namespace Exam1
         private List<LangDictionary> dictionaries = new List<LangDictionary>();
         private Dictionary<string, bool> modifiedDictionaries = new Dictionary<string, bool>();
 
-        private readonly string[] patternMenu1 = { new string('*', 8), "Menu", new string('*', 8) };
-
-        public void Run()
+        private readonly string[] patternMenu1 = { new string('*', 8), "Menu" };
+        
+        public Menu()
         {
             LoadDictionaryNames();
             LoadDictionaries();
+        }
 
+        public void Run()
+        {
             while (true)
             {
                 Console.WriteLine($"\n{patternMenu1[0]}{patternMenu1[1]}{patternMenu1[0]}");
@@ -38,19 +42,30 @@ namespace Exam1
                 Console.WriteLine("4. Exit");
                 Console.WriteLine(new string('-', 20) + "\n");
 
-                string choice = Console.ReadLine();
+                int choice;
+
+                try
+                {
+                    choice = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("\nWrite a number!");
+                    continue;
+                }
+                
                 switch (choice)
                 {
-                    case "1":
+                    case 1:
                         CreateDictionary();
                         break;
-                    case "2":
+                    case 2:
                         ShowDictionaries();
                         break;
-                    case "3":
+                    case 3:
                         DeleteDictionary();
                         break;
-                    case "4":
+                    case 4:
                         PromptSaveModifiedDictionaries();
                         return;
                 }
@@ -61,7 +76,7 @@ namespace Exam1
         {
             if (File.Exists(DICTIONARIES_FILE))
             {
-                using (StreamReader reader = new StreamReader(DICTIONARIES_FILE, System.Text.Encoding.UTF8))
+                using (StreamReader reader = new StreamReader(DICTIONARIES_FILE))
                 {
                     string json = reader.ReadToEnd();
                     dictionaryNames = JsonConvert.DeserializeObject<List<string>>(json);
@@ -86,19 +101,19 @@ namespace Exam1
             string fileName = $"{name}.json";
             if (File.Exists(fileName))
             {   
-                using (StreamReader reader = new StreamReader(fileName, System.Text.Encoding.UTF8))
+                using (StreamReader reader = new StreamReader(fileName))
                 {
                     string json = reader.ReadToEnd();
                     return JsonConvert.DeserializeObject<LangDictionary>(json);
                 }
-            }
+            } else { Console.WriteLine($"Error: Dictionary \"{fileName}\" not found"); }
             return null;
         }
 
         private void SaveDictionaryNames()
         {
             string json = JsonConvert.SerializeObject(dictionaryNames, Formatting.Indented);
-            using (StreamWriter writer = new StreamWriter(DICTIONARIES_FILE, false, System.Text.Encoding.UTF8))
+            using (StreamWriter writer = new StreamWriter(DICTIONARIES_FILE, false))
             {
                 writer.Write(json);
             }
@@ -111,7 +126,7 @@ namespace Exam1
                 LangDictionary dictionary = dictionaries.FirstOrDefault(d => d.DictName == dictName.Key);
                 if (dictionary != null)
                 {
-                    Console.WriteLine($"\nSave changes to dictionary {dictName.Key}? (y/n)");
+                    Console.WriteLine($"\nSave changes to dictionary \"{dictName.Key}\"? (y/n)");
                     string choice = Console.ReadLine();
                     if (choice.ToLower() == "y")
                     {
@@ -148,10 +163,31 @@ namespace Exam1
                 Console.WriteLine($"{i + 1}. {dictionaries[i].DictName}");
             }
 
-            Console.WriteLine("Enter the number of the dictionary you want to open:");
-            int choice = int.Parse(Console.ReadLine());
-            LangDictionary dictionary = dictionaries[choice - 1];
-            dictionary.Run(modifiedDictionaries);
+            Console.WriteLine("Enter the number (0 to return):");
+            int choice = 0;
+
+            try
+            {
+                choice = int.Parse(Console.ReadLine());
+                LangDictionary dictionary = dictionaries[choice - 1];
+                dictionary.Run(modifiedDictionaries);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("\nWrite a number!");
+                ShowDictionaries();
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                if (choice == 0)
+                {
+                    Run();
+                } else
+                {
+                    Console.WriteLine("\nWrite the correct number!");
+                    ShowDictionaries();
+                }
+            }
         }
 
         private void DeleteDictionary()
@@ -204,7 +240,7 @@ namespace Exam1
                 Console.WriteLine("6. Search original word by translation");
                 Console.WriteLine("7. Save dictionary");
                 Console.WriteLine("8. Return to main menu");
-                Console.WriteLine(new string('_', 38) + "\n");
+                Console.WriteLine(new string('-', 38) + "\n");
 
                 Console.Write("Make your choice: ");
                 choice = Console.ReadLine();
@@ -231,7 +267,6 @@ namespace Exam1
                         break;
                     case "7":
                         SaveDictionary();
-                        modifiedDictionaries[DictName] = false;
                         break;
                     case "8":
                         return;
@@ -338,11 +373,11 @@ namespace Exam1
         public void SaveDictionary()
         {
             string json = JsonConvert.SerializeObject(this, Formatting.Indented);
-            using (StreamWriter writer = new StreamWriter($"{DictName}.json", false, System.Text.Encoding.UTF8))
+            using (StreamWriter writer = new StreamWriter($"{DictName}.json", false))
             {
                 writer.Write(json);
             }
-            Console.WriteLine("Dictionary successfully saved.");
+            Console.WriteLine("\nDictionary successfully saved.");
         }
     }
 }
