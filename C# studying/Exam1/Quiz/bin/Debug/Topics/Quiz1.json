@@ -1,0 +1,106 @@
+{
+  "Name": "Quiz1",
+  "Questions": {
+    "What is the capital of France?": [
+      "Paris",
+      "London",
+      "Berlin"
+    ],
+    "Who wrote '1984'?": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Ray Bradbury"
+    ],
+    "What is the main language in Brazil?": [
+      "Portuguese",
+      "Spanish",
+      "English"
+    ],
+    "What is the primary function of a constructor in C#?": [
+      "Initialize objects",
+      "Destroy objects",
+      "Modify properties"
+    ],
+    "What year did World War II end?": [
+      "1945",
+      "1939",
+      "1950"
+    ],
+    "What is the largest ocean on Earth?": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean"
+    ],
+    "What is the main ingredient in guacamole?": [
+      "Avocado",
+      "Tomato",
+      "Onion"
+    ],
+    "What is the hardest natural substance on Earth?": [
+      "Diamond",
+      "Granite",
+      "Iron"
+    ],
+    "What is the process of photosynthesis?": [
+      "Plants convert light energy into chemical energy",
+      "Animals convert food into energy",
+      "Water evaporates into the air"
+    ],
+    "What is the main function of the heart?": [
+      "Pumps blood",
+      "Digests food",
+      "Produces sound"
+    ],
+    "What is the largest planet in our solar system?": [
+      "Jupiter",
+      "Saturn",
+      "Neptune"
+    ],
+    "What is the main component of the Earth's atmosphere?": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide"
+    ],
+    "What is the main source of energy for the Earth?": [
+      "Sun",
+      "Wind",
+      "Geothermal"
+    ],
+    "What is the main method for sorting arrays in C#?": [
+      "sort()",
+      "orderBy()",
+      "rank()"
+    ],
+    "What is the primary use of loops in programming?": [
+      "Repeat a block of code",
+      "Define a function",
+      "Declare a variable"
+    ],
+    "What is the main difference between a class and an object in C#?": [
+      "A class is a blueprint, an object is an instance",
+      "A class is an instance, an object is a blueprint",
+      "There is no difference"
+    ],
+    "What is the main purpose of the Internet?": [
+      "Communication",
+      "Storage",
+      "Computation"
+    ],
+    "What is the main method in a C# program?": [
+      "main()",
+      "start()",
+      "init()"
+    ],
+    "What is the main type of rock that makes up the Earth's crust?": [
+      "Igneous.",
+      "Sedimentary",
+      "Metamorphic"
+    ],
+    "What is the main function of the kidneys?": [
+      "Filter blood",
+      "Digest food",
+      "Regulate temperature"
+    ]
+  },
+  "QuestionCount": 20
+}

@@ -1,0 +1,71 @@
+{
+  "Name": "Quiz2",
+  "Questions": {
+    "What is the smallest country in the world?": [
+      "Vatican City",
+      "Monaco",
+      "Nauru"
+    ],
+    "Who discovered penicillin?": [
+      "Alexander Fleming",
+      "Louis Pasteur",
+      "Robert Koch"
+    ],
+    "What is the main programming language for Android development?": [
+      "Java",
+      "C#",
+      "Python"
+    ],
+    "What is the largest desert in the world?": [
+      "Antarctic Desert",
+      "Sahara Desert",
+      "Arabian Desert"
+    ],
+    "What is the main function of the liver?": [
+      "Detoxifies blood",
+      "Breaks down food",
+      "Produces sound"
+    ],
+    "What is the main method for handling exceptions in C#?": [
+      "Try-Catch",
+      "If-Else",
+      "Switch"
+    ],
+    "What is the main source of protein in a vegetarian diet?": [
+      "Beans",
+      "Fruits",
+      "Grains"
+    ],
+    "What is the main type of energy used in the world?": [
+      "Fossil fuels",
+      "Solar power",
+      "Wind power"
+    ],
+    "What is the main method for reading files in C#?": [
+      "StreamReader",
+      "FileReader",
+      "TextReader"
+    ],
+    "What is the main method for writing files in C#?": [
+      "StreamWriter",
+      "FileWriter",
+      "TextWriter"
+    ],
+    "What is the main method for creating an interface in C#?": [
+      "interface",
+      "abstract",
+      "virtual"
+    ],
+    "What is the main method for creating a class in C#?": [
+      "class",
+      "struct",
+      "enum"
+    ],
+    "What is the main method for creating a struct in C#?": [
+      "struct",
+      "class",
+      "enum"
+    ]
+  },
+  "QuestionCount": 13
+}
