@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|d:\\itstep\\c# studying\\exam1\\dictionary\\langdictionary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|solutionrelative:langdictionary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|D:\\ITStep\\C# studying\\Exam1\\Dictionary\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|D:\\ITStep\\C# studying\\Exam1\\Dictionary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|D:\\ITStep\\C# studying\\Exam1\\Dictionary\\fileutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|solutionrelative:fileutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|D:\\ITStep\\C# studying\\Exam1\\Dictionary\\jsonutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0B343D6-4032-4151-9AC2-D751289EAC6E}|Dictionary.csproj|solutionrelative:jsonutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\Menu.cs",
+              "RelativeDocumentMoniker": "Menu.cs",
+              "ToolTip": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\Menu.cs",
+              "RelativeToolTip": "Menu.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAmwJwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T12:58:44.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LangDictionary.cs",
+              "DocumentMoniker": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\LangDictionary.cs",
+              "RelativeDocumentMoniker": "LangDictionary.cs",
+              "ToolTip": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\LangDictionary.cs",
+              "RelativeToolTip": "LangDictionary.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAQwBoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T12:59:32.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileUtils.cs",
+              "DocumentMoniker": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\FileUtils.cs",
+              "RelativeDocumentMoniker": "FileUtils.cs",
+              "ToolTip": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\FileUtils.cs",
+              "RelativeToolTip": "FileUtils.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:08:44.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JsonUtils.cs",
+              "DocumentMoniker": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\JsonUtils.cs",
+              "RelativeDocumentMoniker": "JsonUtils.cs",
+              "ToolTip": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\JsonUtils.cs",
+              "RelativeToolTip": "JsonUtils.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T09:04:15.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\ITStep\\C# studying\\Exam1\\Dictionary\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T13:11:05.693Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

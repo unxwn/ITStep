@@ -222,7 +222,7 @@ namespace QuizApp
                 .Where(r => r.Topic == quizResult.Topic)
                 .OrderByDescending(r => r.Score)
                 .ThenBy(r => r.Duration)
-                .ToList();
+                .Take(20).ToList();
 
             int userRank = allResults.FindIndex(r => r.QuizResultId == quizResult.QuizResultId) + 1;
 

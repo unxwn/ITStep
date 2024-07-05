@@ -1,9 +1,8 @@
 {
-  "DictName": "create",
+  "DictName": "TEST-тест",
   "Words": {
     "Test": [
-      "test",
-      "testik"
+      "1234"
     ]
   },
   "WordsCount": 1

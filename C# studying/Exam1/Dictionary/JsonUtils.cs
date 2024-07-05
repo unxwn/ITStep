@@ -23,11 +23,9 @@ namespace Exam1
         //    catch (Exception ex)
         //    {
 
-        //        Console.Write("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n!!!!!!");
+        //        Console.Write("!!!!!!!\n\n\n!!!!!!");
         //        return "Just return";
         //    }
-
-
         //}
     }
 }
