@@ -1,0 +1,23 @@
+.church-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.church-image {
+  width: 30vw;
+}
+
+.bell-tower-image {
+  height: 30vw;
+}
+
+.church-description {
+  max-width: 600px;
+}
+
+.church-description ul li {
+  text-align: left;
+  margin: 10px;
+}

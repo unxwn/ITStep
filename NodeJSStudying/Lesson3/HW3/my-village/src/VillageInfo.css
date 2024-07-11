@@ -1,0 +1,8 @@
+.village-info {
+  text-align: center;
+}
+
+.village-info h1,
+.village-info h2 {
+  margin: 10px 0;
+}

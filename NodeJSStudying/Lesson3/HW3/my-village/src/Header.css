@@ -1,0 +1,10 @@
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.lake-image {
+  width: 60vw;
+  height: 50vh;
+  filter: grayscale(30%);
+}
