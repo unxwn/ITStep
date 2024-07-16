@@ -1,0 +1,44 @@
+* {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.cards-container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: cadetblue;
+}
+
+.cards-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+li {
+  margin: 16px 0;
+  border: 2px solid black;
+}
+
+.card-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-photo {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-fullname,
+.card-birthday {
+  margin: 16px;
+}
