@@ -1,0 +1,8 @@
+.shakespeare-bio {
+  flex: 1;
+  padding: 10px;
+}
+
+.shakespeare-bio p {
+  line-height: 1.6;
+}

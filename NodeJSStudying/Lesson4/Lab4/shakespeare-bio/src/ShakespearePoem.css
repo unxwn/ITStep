@@ -1,0 +1,10 @@
+.shakespeare-poem h3 {
+  margin-bottom: 10px;
+}
+
+.shakespeare-poem p {
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  white-space: pre-line;
+}
