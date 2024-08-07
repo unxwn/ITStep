@@ -1,0 +1,78 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.profile-photo {
+  margin: 0px 100px 0px 100px;
+  height: 100vh;
+  border-radius: 50%;
+}
+
+.profile-photo:hover {
+  animation: shake 0.2s alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-2deg);
+  }
+
+  10% {
+    transform: rotate(2deg);
+  }
+
+  20% {
+    transform: rotate(-2deg);
+  }
+
+  30% {
+    transform: rotate(2deg);
+  }
+
+  40% {
+    transform: rotate(-2deg);
+  }
+
+  50% {
+    transform: rotate(2deg);
+  }
+
+  60% {
+    transform: rotate(-2deg);
+  }
+
+  70% {
+    transform: rotate(2deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.info {
+  flex: 2;
+  padding: 20px;
+}
+
+.info h1 {
+  margin-bottom: 10px;
+}

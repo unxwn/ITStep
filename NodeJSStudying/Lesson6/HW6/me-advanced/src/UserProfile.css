@@ -1,0 +1,29 @@
+.input-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-label input {
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.skill-item input {
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 90%;
+}
