@@ -1,0 +1,5 @@
+<div class="event-list" *ngFor="let event of events">
+  <app-event-item [title]="event.title" [date]="event.date" [time]="event.time" [location]="event.location"
+    [description]="event.description" [imageUrl]="event.imageUrl">
+  </app-event-item>
+</div>
