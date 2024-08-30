@@ -1,0 +1,35 @@
+.event-card {
+  background-color: #222;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.748);
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.event-card:hover {
+  background-color: rgb(51, 64, 64);
+  box-shadow: 0 4px 8px rgba(51, 64, 64, 0);
+}
+
+.event-image {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.event-details {
+  padding: 15px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: large;
+}
