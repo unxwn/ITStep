@@ -1,0 +1,11 @@
+<div class="container">
+  <div *ngFor="let product of products" class="product-item">
+    <img [src]="product.imageUrl" [alt]="product.name" />
+    <h2>{{ product.name | uppercase }}</h2>
+    <p>{{ product.category }}</p>
+    <p>{{ product.manufacturer }}</p>
+    <p>Price: {{ product.price | currency }}</p>
+    <p>Discount: {{ product.discount }}%</p>
+    <p>Final Price: {{ product.price - (product.price * (product.discount / 100)) | currency }}</p>
+  </div>
+</div>

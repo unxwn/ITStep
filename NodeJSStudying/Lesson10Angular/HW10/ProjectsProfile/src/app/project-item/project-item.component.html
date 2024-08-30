@@ -1,0 +1,9 @@
+<div class="projects-list">
+  <div class="project-item" *ngFor="let project of projects">
+    <h2>{{ project.title | uppercase }}</h2>
+    <p>{{ project.description }}</p>
+    <p>Completed on: {{ project.completionDate | date:'longDate' }}</p>
+    <p>Category: {{ project.category }}</p>
+    <img [src]="project.imageUrl" alt="{{ project.title }}">
+  </div>
+</div>
