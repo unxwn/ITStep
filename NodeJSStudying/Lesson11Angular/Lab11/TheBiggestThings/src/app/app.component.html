@@ -1,0 +1,19 @@
+<div>
+  <label>
+    <input type="radio" name="vehicle" [(ngModel)]="selectedObject" value="car">Car
+  </label>
+  <label>
+    <input type="radio" name="vehicle" [(ngModel)]="selectedObject" value="plane">Plane
+  </label>
+  <label>
+    <input type="radio" name="vehicle" [(ngModel)]="selectedObject" value="ship">Ship
+  </label>
+</div>
+
+<div *ngIf="selectedObject">
+  <h2>{{ vehicleData[selectedObject].name | uppercase }}</h2>
+  <p>{{ vehicleData[selectedObject].description }}</p>
+  <p><strong>Country of Origin:</strong> {{ vehicleData[selectedObject].country }}</p>
+  <p><strong>Capacity:</strong> {{ vehicleData[selectedObject].capacity }}</p>
+  <img [src]="vehicleData[selectedObject].imageUrl" alt="{{ vehicleData[selectedObject].name }}" width="300px">
+</div>
