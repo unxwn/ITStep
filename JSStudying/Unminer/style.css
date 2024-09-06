@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #333;
+}
+
+canvas {
+  background-color: #000;
+  border: 2px solid #00ff00;
+  margin-bottom: 20px;
+}
+
+#info {
+  margin-top: 5px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: white;
+  gap: 10px;
+}
+
+#difficultyBtn,
+#regenFieldBtn {
+  width: 160px;
+  background-color: #444;
+  color: white;
+  font-size: 16px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#difficultyBtn:hover,
+#regenFieldBtn:hover {
+  background-color: #555
+}
+
+#difficultyBtn:active,
+#regenFieldBtn:active {
+  transform: scale(0.95);
+}
+
+#note {
+  font-size: 16px;
+  color: #ccc;
+  margin-top: 10px;
+  text-align: center;
+}
