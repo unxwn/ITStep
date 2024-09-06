@@ -91,7 +91,6 @@ const drawTiles = () => {
   });
 };
 
-
 const drawBonuses = () => {
   bonuses.forEach(bonus => {
     const image = bonus.type === 'xray' ? xrayImage : heartImage;
@@ -107,7 +106,6 @@ const activateXray = () => {
     setTimeout(() => {
       xrayActive = false;
       revealMines(false);
-      update();
     }, 500);
     updateUI();
   }
@@ -286,7 +284,6 @@ const endGame = () => {
   context.fillRect(0, 0, canvas.width, canvas.height);
   drawCenteredText('You lost', canvas.height / 2);
 
-
   setTimeout(() => {
     level = 1;
     lives = 3;
@@ -313,12 +310,11 @@ const startLevel = () => {
     setTimeout(() => {
       showMines = false;
       update();
-    }, 10000);
+    }, 2000);
   }
 
   gameTimer = setInterval(update, 15);
 };
-
 
 const startGame = () => {
   startLevel();
