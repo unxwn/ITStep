@@ -1,0 +1,16 @@
+<h2>Users list</h2>
+<ul class="user-list">
+  <li *ngFor="let user of users" class="user-item">
+    <div class="user-info">
+      <span class="user-name">{{user.name}}</span>
+      <span class="user-email">{{user.email}}</span>
+      <span class="user-age">{{user.age}} years old</span>
+    </div>
+    <div class="user-actions">
+      <a [routerLink]="['/users/edit', user.id]" class="edit-button">Edit</a>
+      <button (click)="deleteUser(user.id)" class="delete-button">Delete</button>
+    </div>
+  </li>
+</ul>
+
+<a routerLink="/users/add" class="add-button">Add new user</a>
