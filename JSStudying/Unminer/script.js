@@ -1,5 +1,5 @@
 //todo графіка; збільшення довжини рівня; виправлення режиму hardcore;
-//todo "розумна" генерація мін; 
+//todo "розумна" генерація мін; звук;
 const canvas = document.getElementById('gameCanvas');
 const context = canvas.getContext('2d');
 
