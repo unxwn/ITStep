@@ -1,0 +1,309 @@
+body {
+  background-color: rgb(36, 39, 41);
+  color: rgb(232, 230, 227);
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(43, 47, 49);
+  border-radius: 0px 0px 12px 12px;
+}
+
+.category-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-bar button {
+  padding: 10px 15px;
+  border: none;
+  background-color: rgb(32, 35, 37);
+  color: rgb(232, 230, 227);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.category-bar button.active {
+  background-color: rgb(0, 98, 204);
+}
+
+.category-bar button.active:hover {
+  background-color: rgb(0, 98, 204);
+}
+
+.category-bar button:hover {
+  background-color: #8f8f8f;
+}
+
+button.all-tasks-category {
+  background-color: #000000;
+  color: white;
+}
+
+.new-category {
+  display: flex;
+  align-items: center;
+}
+
+.new-category input {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid rgb(32, 35, 37);
+  background-color: rgb(32, 35, 37);
+  color: rgb(232, 230, 227);
+  border-radius: 4px;
+}
+
+.new-category button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-category button:hover {
+  background-color: #218838;
+}
+
+.task-list-button,
+.add-task-button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.task-list-button {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.task-list-button:hover,
+.add-task-button:hover {
+  background-color: #218838;
+}
+
+.task-form {
+  background-color: rgb(43, 47, 49);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-form h2 {
+  margin-bottom: 20px;
+  color: rgb(232, 230, 227);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgb(232, 230, 227);
+}
+
+.task-form input[type="text"],
+.task-form textarea,
+.task-form select,
+.task-form input[type="datetime-local"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(32, 35, 37);
+  background-color: rgb(32, 35, 37);
+  color: rgb(232, 230, 227);
+  border-radius: 4px;
+}
+
+.task-form select,
+.task-form input[type="datetime-local"] {
+  width: auto;
+}
+
+.datetime-buttons {
+  margin-bottom: 10px;
+}
+
+.datetime-buttons button {
+  margin-right: 9px;
+  padding: 5px 8px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: rgb(32, 35, 37);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.task-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.task-item h3 {
+  margin-top: 0;
+  color: rgb(232, 230, 227);
+}
+
+.task-item p {
+  margin: 5px 0;
+  color: rgb(232, 230, 227);
+}
+
+.task-item button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-item button:first-of-type {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.task-item button:last-of-type {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.task-item button:hover {
+  opacity: 0.8;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgb(32, 35, 37);
+  background-color: rgb(32, 35, 37);
+  color: rgb(232, 230, 227);
+}
+
+.search-bar div {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar div label {
+  display: flex;
+  align-items: center;
+  color: rgb(232, 230, 227);
+}
+
+.search-bar button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.search-bar button:hover {
+  background-color: #218838;
+}
+
+.sorting-controls select {
+  font-size: 16px;
+  margin-right: 10px;
+  width: auto;
+  border-radius: 4px;
+  border: 1px solid rgb(32, 35, 37);
+  background-color: rgb(32, 35, 37);
+  color: rgb(232, 230, 227);
+}
+
+.sorting-controls label {
+  font-size: 18px;
+}
+
+.sort-by-text {
+  margin-bottom: 8px;
+}
+
+.priority-label {
+  display: inline-block;
+  margin-right: 14px;
+  margin-left: 4px;
+}
+
+.priority-label.low {
+  color: green;
+}
+
+.priority-label.medium {
+  color: orange;
+}
+
+.priority-label.high {
+  color: red;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(36, 39, 41);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #949494;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff00f2;
+}
