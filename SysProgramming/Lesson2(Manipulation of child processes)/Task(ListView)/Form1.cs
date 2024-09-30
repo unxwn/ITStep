@@ -1,20 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Task_ListView_
 {
     public partial class Form1 : Form
     {
-        private System.Windows.Forms.Timer updateTimer;
+        private Timer updateTimer;
 
         public Form1()
         {
@@ -40,7 +35,7 @@ namespace Task_ListView_
 
             updateTimer = new System.Windows.Forms.Timer();
             updateTimer.Tick += UpdateProcessList;
-            updateTimer.Interval = 1000; // Default interval
+            updateTimer.Interval = 1000;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,12 +67,33 @@ namespace Task_ListView_
             {
                 foreach (Process process in processGroup)
                 {
-                    ListViewItem listViewItem = new ListViewItem(process.Id.ToString());
-                    listViewItem.SubItems.Add(process.ProcessName);
-                    listViewItem.SubItems.Add(process.TotalProcessorTime.TotalSeconds.ToString("F2") + " s");
-                    listViewItem.SubItems.Add(process.Threads.Count.ToString());
-                    listViewItem.SubItems.Add(processGroup.Count().ToString());
-                    listView1.Items.Add(listViewItem);
+                    try
+                    {
+                        ListViewItem listViewItem = new ListViewItem(process.Id.ToString());
+                        listViewItem.SubItems.Add(process.ProcessName);
+                        listViewItem.SubItems.Add(process.TotalProcessorTime.TotalSeconds.ToString("F2") + " s");
+                        listViewItem.SubItems.Add(process.Threads.Count.ToString());
+                        listViewItem.SubItems.Add(processGroup.Count().ToString());
+                        listView1.Items.Add(listViewItem);
+                    }
+                    catch (Win32Exception ex)
+                    {
+                        ListViewItem listViewItem = new ListViewItem(process.Id.ToString());
+                        listViewItem.SubItems.Add(process.ProcessName);
+                        listViewItem.SubItems.Add("Access Denied");
+                        listViewItem.SubItems.Add("Access Denied");
+                        listViewItem.SubItems.Add(processGroup.Count().ToString());
+                        listView1.Items.Add(listViewItem);
+                    }
+                    catch (Exception ex)
+                    {
+                        ListViewItem listViewItem = new ListViewItem(process.Id.ToString());
+                        listViewItem.SubItems.Add(process.ProcessName);
+                        listViewItem.SubItems.Add("Error");
+                        listViewItem.SubItems.Add("Error");
+                        listViewItem.SubItems.Add(processGroup.Count().ToString());
+                        listView1.Items.Add(listViewItem);
+                    }
                 }
             }
         }
@@ -137,7 +153,7 @@ namespace Task_ListView_
         {
             if (int.TryParse(textBox1.Text, out int interval) && interval > 0)
             {
-                updateTimer.Interval = interval * 1000; // Convert to milliseconds
+                updateTimer.Interval = interval * 1000;
                 updateTimer.Start();
             }
             else
