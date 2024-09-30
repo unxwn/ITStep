@@ -5,8 +5,6 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -16,6 +14,8 @@ namespace Task_ListView_
 {
     public partial class Form1 : Form
     {
+        private System.Windows.Forms.Timer updateTimer;
+
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +23,9 @@ namespace Task_ListView_
             listView1.View = View.Details;
             listView1.Columns.Add("process_id", 75);
             listView1.Columns.Add("process_name", 225);
+            listView1.Columns.Add("cpu_time", 100);
+            listView1.Columns.Add("thread_count", 100);
+            listView1.Columns.Add("instance_count", 100);
             listView1.FullRowSelect = true;
 
             listView2.View = View.Details;
@@ -32,21 +35,50 @@ namespace Task_ListView_
             listView2.FullRowSelect = true;
 
             listView3.View = View.Details;
-            listView3.Columns.Add("module_name", 300);;
+            listView3.Columns.Add("module_name", 300);
             listView3.FullRowSelect = true;
+
+            updateTimer = new System.Windows.Forms.Timer();
+            updateTimer.Tick += UpdateProcessList;
+            updateTimer.Interval = 1000; // Default interval
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                int id = int.Parse(listView1.SelectedItems[0].Text);
+                Process process = Process.GetProcessById(id);
+                try
+                {
+                    process.Kill();
+                    MessageBox.Show($"Process {process.ProcessName} (ID: {process.Id}) has been terminated.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Failed to terminate process: {ex.Message}");
+                }
+            }
+        }
+
+        private void UpdateProcessList(object sender, EventArgs e)
+        {
             listView1.Items.Clear();
 
             Process[] processes = Process.GetProcesses();
+            var processGroups = processes.GroupBy(p => p.ProcessName);
 
-            foreach (Process process in processes)
+            foreach (var processGroup in processGroups)
             {
-                ListViewItem listViewItem = new ListViewItem(process.Id.ToString());
-                listViewItem.SubItems.Add(process.ProcessName);
-                listView1.Items.Add(listViewItem);
+                foreach (Process process in processGroup)
+                {
+                    ListViewItem listViewItem = new ListViewItem(process.Id.ToString());
+                    listViewItem.SubItems.Add(process.ProcessName);
+                    listViewItem.SubItems.Add(process.TotalProcessorTime.TotalSeconds.ToString("F2") + " s");
+                    listViewItem.SubItems.Add(process.Threads.Count.ToString());
+                    listViewItem.SubItems.Add(processGroup.Count().ToString());
+                    listView1.Items.Add(listViewItem);
+                }
             }
         }
 
@@ -65,19 +97,20 @@ namespace Task_ListView_
                 label2.ForeColor = Color.Black;
                 label2.Text = $"Info about modules of {process.ProcessName}";
 
-                //MessageBox.Show($"This process has {process.Threads.Count} threads");
-
-                try {
+                try
+                {
                     var threads = process.Threads;
-                    
-                    foreach (ProcessThread thread in threads) {
+
+                    foreach (ProcessThread thread in threads)
+                    {
                         ListViewItem listViewItem = new ListViewItem(thread.Id.ToString());
                         listViewItem.SubItems.Add(thread.PriorityLevel.ToString());
                         listViewItem.SubItems.Add(thread.StartTime.ToString());
                         listView2.Items.Add(listViewItem);
                     }
                 }
-                catch (Exception ex) {
+                catch (Exception ex)
+                {
                     label1.ForeColor = Color.Red;
                     label1.Text = ex.Message;
                 }
@@ -86,17 +119,14 @@ namespace Task_ListView_
                 {
                     var modules = process.Modules;
 
-                    foreach (var module in modules)
+                    foreach (ProcessModule module in modules)
                     {
-                        try
-                        {
-                            ListViewItem listViewItem = new ListViewItem(module.ToString());
-                            listView3.Items.Add(listViewItem);
-                        }
-                        catch { continue; }
+                        ListViewItem listViewItem = new ListViewItem(module.ModuleName);
+                        listView3.Items.Add(listViewItem);
                     }
                 }
-                catch {
+                catch
+                {
                     label2.ForeColor = Color.Red;
                     label2.Text = $"Modules in {process.ProcessName} is inaccessible";
                 }
@@ -105,7 +135,20 @@ namespace Task_ListView_
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            if (int.TryParse(textBox1.Text, out int interval) && interval > 0)
+            {
+                updateTimer.Interval = interval * 1000; // Convert to milliseconds
+                updateTimer.Start();
+            }
+            else
+            {
+                updateTimer.Stop();
+            }
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            updateTimer.Start();
         }
     }
 }
