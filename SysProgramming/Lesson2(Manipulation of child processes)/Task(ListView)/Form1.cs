@@ -33,9 +33,10 @@ namespace Task_ListView_
             listView3.Columns.Add("module_name", 300);
             listView3.FullRowSelect = true;
 
-            updateTimer = new System.Windows.Forms.Timer();
+            updateTimer = new Timer();
             updateTimer.Tick += UpdateProcessList;
-            updateTimer.Interval = 1000;
+            updateTimer.Interval = 3000;
+            updateTimer.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
