@@ -1,0 +1,7 @@
+D:\ITStep\SysProgramming\Lesson3\HW3\bin\Debug\HW3.exe.config
+D:\ITStep\SysProgramming\Lesson3\HW3\bin\Debug\HW3.exe
+D:\ITStep\SysProgramming\Lesson3\HW3\bin\Debug\HW3.pdb
+D:\ITStep\SysProgramming\Lesson3\HW3\obj\Debug\HW3.csproj.AssemblyReference.cache
+D:\ITStep\SysProgramming\Lesson3\HW3\obj\Debug\HW3.csproj.CoreCompileInputs.cache
+D:\ITStep\SysProgramming\Lesson3\HW3\obj\Debug\HW3.exe
+D:\ITStep\SysProgramming\Lesson3\HW3\obj\Debug\HW3.pdb
