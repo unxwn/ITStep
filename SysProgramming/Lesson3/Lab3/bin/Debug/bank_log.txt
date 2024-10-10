@@ -32,3 +32,9 @@ Time: 02.10.2024 16:59:12, Name: MyAcc, Money: 1000000, Percent: 0
 Time: 02.10.2024 16:59:12, Name: MyAcc, Money: 1000000, Percent: 5
 Time: 02.10.2024 16:59:12, Name: MyAcc, Money: 1500000, Percent: 5
 Time: 02.10.2024 16:59:12, Name: MyAcc, Money: 1500000, Percent: 6
+Time: 10.10.2024 17:22:43, Name: MyAcc, Money: 0, Percent: 0
+Time: 10.10.2024 17:22:44, Name: MyAcc, Money: 1000000, Percent: 0
+Time: 10.10.2024 17:22:44, Name: MyAcc, Money: 1000000, Percent: 5
+Time: 10.10.2024 17:22:44, Name: MyAcc, Money: 1500000, Percent: 5
+Time: 10.10.2024 17:22:45, Name: MyAcc, Money: 1500000, Percent: 6
+Time: 10.10.2024 17:25:44, Name: MyAcc, Money: 0, Percent: 0

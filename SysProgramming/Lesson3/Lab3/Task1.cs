@@ -20,7 +20,7 @@ namespace Lesson3
             ParameterizedThreadStart TS = new ParameterizedThreadStart(PerformToString);
             Thread T = new Thread(TS);
             T.Start(collection);
-            T.Join();
+            //T.Join();
 
             Console.WriteLine("Task2:");
             Bank myBank = new Bank();

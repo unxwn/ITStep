@@ -5,3 +5,10 @@ D:\ITStep\SysProgramming\Lesson3\obj\Debug\Lesson3.csproj.AssemblyReference.cach
 D:\ITStep\SysProgramming\Lesson3\obj\Debug\Lesson3.csproj.CoreCompileInputs.cache
 D:\ITStep\SysProgramming\Lesson3\obj\Debug\Lesson3.exe
 D:\ITStep\SysProgramming\Lesson3\obj\Debug\Lesson3.pdb
+D:\ITStep\SysProgramming\Lesson3\Lab3\bin\Debug\Lesson3.exe.config
+D:\ITStep\SysProgramming\Lesson3\Lab3\bin\Debug\Lesson3.exe
+D:\ITStep\SysProgramming\Lesson3\Lab3\bin\Debug\Lesson3.pdb
+D:\ITStep\SysProgramming\Lesson3\Lab3\obj\Debug\Lesson3.csproj.AssemblyReference.cache
+D:\ITStep\SysProgramming\Lesson3\Lab3\obj\Debug\Lesson3.csproj.CoreCompileInputs.cache
+D:\ITStep\SysProgramming\Lesson3\Lab3\obj\Debug\Lesson3.exe
+D:\ITStep\SysProgramming\Lesson3\Lab3\obj\Debug\Lesson3.pdb
