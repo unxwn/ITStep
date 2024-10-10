@@ -1,0 +1,7 @@
+D:\ITStep\SysProgramming\Lesson4(PoolOfThreads)\Lab4\bin\Debug\Lab4.exe.config
+D:\ITStep\SysProgramming\Lesson4(PoolOfThreads)\Lab4\bin\Debug\Lab4.exe
+D:\ITStep\SysProgramming\Lesson4(PoolOfThreads)\Lab4\bin\Debug\Lab4.pdb
+D:\ITStep\SysProgramming\Lesson4(PoolOfThreads)\Lab4\obj\Debug\Lab4.csproj.AssemblyReference.cache
+D:\ITStep\SysProgramming\Lesson4(PoolOfThreads)\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+D:\ITStep\SysProgramming\Lesson4(PoolOfThreads)\Lab4\obj\Debug\Lab4.exe
+D:\ITStep\SysProgramming\Lesson4(PoolOfThreads)\Lab4\obj\Debug\Lab4.pdb
