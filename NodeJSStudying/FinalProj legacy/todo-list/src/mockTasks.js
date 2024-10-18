@@ -1,7 +1,7 @@
 export const mockTasks = [
   {
     id: 1,
-    name: 'Buy groceries',
+    name: 'LERA',
     datetime: '2024-09-24T10:00',
     description: 'Buy milk, bread, and eggs from the store.',
     tags: ['shopping', 'chores'],
@@ -10,7 +10,7 @@ export const mockTasks = [
   },
   {
     id: 2,
-    name: 'Finish project report',
+    name: 'LOX',
     datetime: '2024-09-25T15:00',
     description: 'Complete the final report for the project.',
     tags: ['work', 'report'],
@@ -19,7 +19,7 @@ export const mockTasks = [
   },
   {
     id: 3,
-    name: 'Call plumber',
+    name: 'SHARTUYU',
     datetime: '2024-09-26T09:00',
     description: 'Schedule an appointment to fix the kitchen sink.',
     tags: ['home', 'maintenance'],
