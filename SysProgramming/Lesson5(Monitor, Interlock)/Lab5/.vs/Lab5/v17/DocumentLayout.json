@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ITStep\\SysProgramming\\Lesson5(Monitor, Interlock)\\Lab5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E9E36E-EFC4-477C-A7B5-50C4C41A9910}|Lab5.csproj|d:\\itstep\\sysprogramming\\lesson5(monitor, interlock)\\lab5\\bridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E9E36E-EFC4-477C-A7B5-50C4C41A9910}|Lab5.csproj|solutionrelative:bridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E9E36E-EFC4-477C-A7B5-50C4C41A9910}|Lab5.csproj|d:\\itstep\\sysprogramming\\lesson5(monitor, interlock)\\lab5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E9E36E-EFC4-477C-A7B5-50C4C41A9910}|Lab5.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bridge.cs",
+              "DocumentMoniker": "D:\\ITStep\\SysProgramming\\Lesson5(Monitor, Interlock)\\Lab5\\Bridge.cs",
+              "RelativeDocumentMoniker": "Bridge.cs",
+              "ToolTip": "D:\\ITStep\\SysProgramming\\Lesson5(Monitor, Interlock)\\Lab5\\Bridge.cs",
+              "RelativeToolTip": "Bridge.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:21:01.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITStep\\SysProgramming\\Lesson5(Monitor, Interlock)\\Lab5\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\ITStep\\SysProgramming\\Lesson5(Monitor, Interlock)\\Lab5\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:20:54.309Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

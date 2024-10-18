@@ -1,0 +1,7 @@
+D:\ITStep\SysProgramming\Lesson5(Monitor, Interlock)\Lab5\bin\Debug\Lab5.exe.config
+D:\ITStep\SysProgramming\Lesson5(Monitor, Interlock)\Lab5\bin\Debug\Lab5.exe
+D:\ITStep\SysProgramming\Lesson5(Monitor, Interlock)\Lab5\bin\Debug\Lab5.pdb
+D:\ITStep\SysProgramming\Lesson5(Monitor, Interlock)\Lab5\obj\Debug\Lab5.csproj.AssemblyReference.cache
+D:\ITStep\SysProgramming\Lesson5(Monitor, Interlock)\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
+D:\ITStep\SysProgramming\Lesson5(Monitor, Interlock)\Lab5\obj\Debug\Lab5.exe
+D:\ITStep\SysProgramming\Lesson5(Monitor, Interlock)\Lab5\obj\Debug\Lab5.pdb
