@@ -20,7 +20,7 @@ namespace Lab5
             for (int i = 1; i <= 5; i++)
             {
                 new Thread(CarCrossing).Start(i);
-                Thread.Sleep(rand.Next(1000, 5000));
+                Thread.Sleep(rand.Next(10, 5000));
             }
         }
     }
