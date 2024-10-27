@@ -1,0 +1,7 @@
+D:\ITStep\SysProgramming\Lesson6\Lab6(TaskAboutPhilosophes)\obj\Debug\Lab6(TaskAboutPhilosophes).csproj.AssemblyReference.cache
+D:\ITStep\SysProgramming\Lesson6\Lab6(TaskAboutPhilosophes)\obj\Debug\Lab6(TaskAboutPhilosophes).csproj.CoreCompileInputs.cache
+D:\ITStep\SysProgramming\Lesson6\Lab6(TaskAboutPhilosophes)\bin\Debug\Lab6(TaskAboutPhilosophes).exe.config
+D:\ITStep\SysProgramming\Lesson6\Lab6(TaskAboutPhilosophes)\bin\Debug\Lab6(TaskAboutPhilosophes).exe
+D:\ITStep\SysProgramming\Lesson6\Lab6(TaskAboutPhilosophes)\bin\Debug\Lab6(TaskAboutPhilosophes).pdb
+D:\ITStep\SysProgramming\Lesson6\Lab6(TaskAboutPhilosophes)\obj\Debug\Lab6(TaskAboutPhilosophes).exe
+D:\ITStep\SysProgramming\Lesson6\Lab6(TaskAboutPhilosophes)\obj\Debug\Lab6(TaskAboutPhilosophes).pdb
