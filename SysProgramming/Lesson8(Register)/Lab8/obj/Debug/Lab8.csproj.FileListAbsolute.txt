@@ -1,0 +1,10 @@
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\bin\Debug\Lab8.exe.config
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\bin\Debug\Lab8.exe
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\bin\Debug\Lab8.pdb
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\obj\Debug\Lab8.csproj.AssemblyReference.cache
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\obj\Debug\Lab8.Form1.resources
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\obj\Debug\Lab8.Properties.Resources.resources
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\obj\Debug\Lab8.csproj.GenerateResource.cache
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\obj\Debug\Lab8.csproj.CoreCompileInputs.cache
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\obj\Debug\Lab8.exe
+D:\ITStep\SysProgramming\Lesson8(Register)\Lab8\obj\Debug\Lab8.pdb
