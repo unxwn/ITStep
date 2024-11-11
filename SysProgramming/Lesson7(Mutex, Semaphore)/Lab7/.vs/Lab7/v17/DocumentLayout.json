@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\ITStep\\SysProgramming\\Lesson7(Mutex, Semaphore)\\Lab7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49DC4213-2CBC-4EBA-90FC-E5B4BB7D020A}|Lab7.csproj|D:\\ITStep\\SysProgramming\\Lesson7(Mutex, Semaphore)\\Lab7\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49DC4213-2CBC-4EBA-90FC-E5B4BB7D020A}|Lab7.csproj|d:\\itstep\\sysprogramming\\lesson7(mutex, semaphore)\\lab7\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49DC4213-2CBC-4EBA-90FC-E5B4BB7D020A}|Lab7.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DC4213-2CBC-4EBA-90FC-E5B4BB7D020A}|Lab7.csproj|d:\\itstep\\sysprogramming\\lesson7(mutex, semaphore)\\lab7\\threadinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DC4213-2CBC-4EBA-90FC-E5B4BB7D020A}|Lab7.csproj|solutionrelative:threadinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49DC4213-2CBC-4EBA-90FC-E5B4BB7D020A}|Lab7.csproj|D:\\ITStep\\SysProgramming\\Lesson7(Mutex, Semaphore)\\Lab7\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{49DC4213-2CBC-4EBA-90FC-E5B4BB7D020A}|Lab7.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DC4213-2CBC-4EBA-90FC-E5B4BB7D020A}|Lab7.csproj|D:\\ITStep\\SysProgramming\\Lesson7(Mutex, Semaphore)\\Lab7\\threadinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DC4213-2CBC-4EBA-90FC-E5B4BB7D020A}|Lab7.csproj|solutionrelative:threadinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,35 +32,33 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\ITStep\\SysProgramming\\Lesson7(Mutex, Semaphore)\\Lab7\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAgwGsAAAAxAAAA",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAwwK0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T09:15:19.201Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ThreadInfo.cs",
               "DocumentMoniker": "D:\\ITStep\\SysProgramming\\Lesson7(Mutex, Semaphore)\\Lab7\\ThreadInfo.cs",
               "RelativeDocumentMoniker": "ThreadInfo.cs",
               "ToolTip": "D:\\ITStep\\SysProgramming\\Lesson7(Mutex, Semaphore)\\Lab7\\ThreadInfo.cs",
               "RelativeToolTip": "ThreadInfo.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA9wAoAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T09:38:07.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T09:38:07.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\ITStep\\SysProgramming\\Lesson7(Mutex, Semaphore)\\Lab7\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\ITStep\\SysProgramming\\Lesson7(Mutex, Semaphore)\\Lab7\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T09:14:11.352Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-28T09:14:11.352Z"
             }
           ]
         }
