@@ -1,0 +1,7 @@
+D:\ITStep\SysProgramming\FinalTask(Mutex)\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\ITStep\SysProgramming\FinalTask(Mutex)\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\ITStep\SysProgramming\FinalTask(Mutex)\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\ITStep\SysProgramming\FinalTask(Mutex)\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\ITStep\SysProgramming\FinalTask(Mutex)\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\ITStep\SysProgramming\FinalTask(Mutex)\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\ITStep\SysProgramming\FinalTask(Mutex)\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
