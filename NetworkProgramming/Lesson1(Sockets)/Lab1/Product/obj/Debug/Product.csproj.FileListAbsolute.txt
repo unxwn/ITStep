@@ -1,0 +1,6 @@
+D:\ITStep\NetworkProgramming\Lesson1(Sockets)\Lab1\Product\bin\Debug\Product.dll
+D:\ITStep\NetworkProgramming\Lesson1(Sockets)\Lab1\Product\bin\Debug\Product.pdb
+D:\ITStep\NetworkProgramming\Lesson1(Sockets)\Lab1\Product\obj\Debug\Product.csproj.AssemblyReference.cache
+D:\ITStep\NetworkProgramming\Lesson1(Sockets)\Lab1\Product\obj\Debug\Product.csproj.CoreCompileInputs.cache
+D:\ITStep\NetworkProgramming\Lesson1(Sockets)\Lab1\Product\obj\Debug\Product.dll
+D:\ITStep\NetworkProgramming\Lesson1(Sockets)\Lab1\Product\obj\Debug\Product.pdb
