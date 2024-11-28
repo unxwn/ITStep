@@ -1,0 +1,10 @@
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\obj\Debug\ScreenshotiksServer.csproj.AssemblyReference.cache
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\obj\Debug\ScreenshotiksServer.ServerForm.resources
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\obj\Debug\ScreenshotiksServer.csproj.GenerateResource.cache
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\obj\Debug\ScreenshotiksServer.csproj.CoreCompileInputs.cache
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\bin\Debug\ScreenshotiksServer.exe.config
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\bin\Debug\ScreenshotiksServer.exe
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\bin\Debug\ScreenshotiksServer.pdb
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\obj\Debug\ScreenshotiksServer.Properties.Resources.resources
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\obj\Debug\ScreenshotiksServer.exe
+D:\ITStep\NetworkProgramming\Lesson2(TCP)\ServerScreenshotiks\obj\Debug\ScreenshotiksServer.pdb

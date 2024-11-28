@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenshotiksServer", "ScreenshotiksServer.csproj", "{5CA39133-37BE-44B6-885D-C29FD0475B04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenshotiksClient", "..\ClientScreenshotiks\ScreenshotiksClient.csproj", "{936CF562-F6B1-41E4-8723-2263949F76AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CA39133-37BE-44B6-885D-C29FD0475B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA39133-37BE-44B6-885D-C29FD0475B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA39133-37BE-44B6-885D-C29FD0475B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA39133-37BE-44B6-885D-C29FD0475B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936CF562-F6B1-41E4-8723-2263949F76AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936CF562-F6B1-41E4-8723-2263949F76AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936CF562-F6B1-41E4-8723-2263949F76AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936CF562-F6B1-41E4-8723-2263949F76AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36C786A6-DB3A-44D5-8388-BE861C76CCB2}
+	EndGlobalSection
+EndGlobal
