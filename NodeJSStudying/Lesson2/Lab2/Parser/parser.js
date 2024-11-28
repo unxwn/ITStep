@@ -10,9 +10,9 @@ function parseStr(str, unsorted = true) {
   }
 
   // console.log("asd", charCount);
-  
+
   return charCount;
-  
+
   // Це був тотальний провал із сортуванням *facepalm* 
   // const newCharCount = {};
 
