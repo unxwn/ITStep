@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ITStep\\NetworkProgramming\\Lesson3(TCP TicTacToe)\\TicTacToe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8236D887-A1E5-4245-BE08-5D333CD283F1}|Server.csproj|d:\\itstep\\networkprogramming\\lesson3(tcp tictactoe)\\tictactoe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8236D887-A1E5-4245-BE08-5D333CD283F1}|Server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB12112C-C5F7-4EE5-AA7A-056DF4230BD8}|..\\Client\\Client.csproj|d:\\itstep\\networkprogramming\\lesson3(tcp tictactoe)\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2B5B5E-0273-445F-A74D-B49409D8AB54}|..\\GameResult\\GameResult.csproj|d:\\itstep\\networkprogramming\\lesson3(tcp tictactoe)\\gameresult\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\ITStep\\NetworkProgramming\\Lesson3(TCP TicTacToe)\\GameResult\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\GameResult\\Class1.cs",
+              "ToolTip": "D:\\ITStep\\NetworkProgramming\\Lesson3(TCP TicTacToe)\\GameResult\\Class1.cs",
+              "RelativeToolTip": "..\\GameResult\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T22:28:16.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITStep\\NetworkProgramming\\Lesson3(TCP TicTacToe)\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Client\\Program.cs",
+              "ToolTip": "D:\\ITStep\\NetworkProgramming\\Lesson3(TCP TicTacToe)\\Client\\Program.cs",
+              "RelativeToolTip": "..\\Client\\Program.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAA2wAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T22:08:33.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITStep\\NetworkProgramming\\Lesson3(TCP TicTacToe)\\TicTacToe\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\ITStep\\NetworkProgramming\\Lesson3(TCP TicTacToe)\\TicTacToe\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T22:07:22.848Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

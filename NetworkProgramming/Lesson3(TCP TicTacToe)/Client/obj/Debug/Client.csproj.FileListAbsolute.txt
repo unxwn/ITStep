@@ -1,0 +1,12 @@
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\bin\Debug\Client.exe.config
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\bin\Debug\Client.exe
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\bin\Debug\Client.pdb
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\bin\Debug\GameResult.dll
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\bin\Debug\Newtonsoft.Json.dll
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\bin\Debug\GameResult.pdb
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\bin\Debug\Newtonsoft.Json.xml
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\obj\Debug\Client.csproj.Up2Date
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\obj\Debug\Client.exe
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\Client\obj\Debug\Client.pdb

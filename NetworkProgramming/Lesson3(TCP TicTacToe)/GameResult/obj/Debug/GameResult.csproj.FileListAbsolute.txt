@@ -1,0 +1,6 @@
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\GameResult\obj\Debug\GameResult.csproj.AssemblyReference.cache
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\GameResult\obj\Debug\GameResult.csproj.CoreCompileInputs.cache
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\GameResult\bin\Debug\GameResult.dll
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\GameResult\bin\Debug\GameResult.pdb
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\GameResult\obj\Debug\GameResult.dll
+D:\ITStep\NetworkProgramming\Lesson3(TCP TicTacToe)\GameResult\obj\Debug\GameResult.pdb
