@@ -1,0 +1,6 @@
+D:\ITStep\NetworkProgramming\Lesson4(UDP Clock)\Reminder\bin\Debug\Reminder.dll
+D:\ITStep\NetworkProgramming\Lesson4(UDP Clock)\Reminder\bin\Debug\Reminder.pdb
+D:\ITStep\NetworkProgramming\Lesson4(UDP Clock)\Reminder\obj\Debug\Reminder.csproj.AssemblyReference.cache
+D:\ITStep\NetworkProgramming\Lesson4(UDP Clock)\Reminder\obj\Debug\Reminder.csproj.CoreCompileInputs.cache
+D:\ITStep\NetworkProgramming\Lesson4(UDP Clock)\Reminder\obj\Debug\Reminder.dll
+D:\ITStep\NetworkProgramming\Lesson4(UDP Clock)\Reminder\obj\Debug\Reminder.pdb
