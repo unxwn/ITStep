@@ -1,0 +1,12 @@
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\bin\Debug\Server.exe.config
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\bin\Debug\Server.exe
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\bin\Debug\Server.pdb
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\bin\Debug\EntityFramework.dll
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\bin\Debug\EntityFramework.SqlServer.dll
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\bin\Debug\EntityFramework.xml
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\bin\Debug\EntityFramework.SqlServer.xml
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\obj\Debug\Server.csproj.Up2Date
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\obj\Debug\Server.exe
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Server\obj\Debug\Server.pdb

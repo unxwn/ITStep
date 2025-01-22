@@ -1,0 +1,114 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Client\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CarDB/True/SqlTable/dbo.Cars.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4996668B-42C2-4E44-AE93-B2197948D57C}|..\\Server\\Server.csproj|d:\\itstep\\networkprogramming\\lesson5(udp car dealership)\\server\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4996668B-42C2-4E44-AE93-B2197948D57C}|..\\Server\\Server.csproj|d:\\itstep\\networkprogramming\\lesson5(udp car dealership)\\server\\carcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4996668B-42C2-4E44-AE93-B2197948D57C}|..\\Server\\Server.csproj|d:\\itstep\\networkprogramming\\lesson5(udp car dealership)\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6EBD51-A1D2-4FC0-B267-1A03FCB7A3DE}|Client.csproj|D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Client\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6EBD51-A1D2-4FC0-B267-1A03FCB7A3DE}|Client.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6EBD51-A1D2-4FC0-B267-1A03FCB7A3DE}|Client.csproj|D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Client\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B6EBD51-A1D2-4FC0-B267-1A03FCB7A3DE}|Client.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dbo.Cars [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CarDB/True/SqlTable/dbo.Cars.sql",
+              "ToolTip": "dbo.Cars [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-22T13:38:46.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Car.cs",
+              "DocumentMoniker": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Server\\Car.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Car.cs",
+              "ToolTip": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Server\\Car.cs",
+              "RelativeToolTip": "..\\Server\\Car.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:13:27.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarContext.cs",
+              "DocumentMoniker": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Server\\CarContext.cs",
+              "RelativeDocumentMoniker": "..\\Server\\CarContext.cs",
+              "ToolTip": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Server\\CarContext.cs",
+              "RelativeToolTip": "..\\Server\\CarContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:11:39.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Program.cs",
+              "ToolTip": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Server\\Program.cs",
+              "RelativeToolTip": "..\\Server\\Program.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowCoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:05:49.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Client\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Client\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:04:10.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Client\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\ITStep\\NetworkProgramming\\Lesson5(Udp Car Dealership)\\Client\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:03:30.484Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

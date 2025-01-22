@@ -1,0 +1,10 @@
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\bin\Debug\Client.exe.config
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\bin\Debug\Client.exe
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\bin\Debug\Client.pdb
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\obj\Debug\Client.Form1.resources
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\obj\Debug\Client.Properties.Resources.resources
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\obj\Debug\Client.exe
+D:\ITStep\NetworkProgramming\Lesson5(Udp Car Dealership)\Client\obj\Debug\Client.pdb
