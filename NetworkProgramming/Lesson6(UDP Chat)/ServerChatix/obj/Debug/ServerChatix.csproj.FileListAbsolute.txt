@@ -1,0 +1,7 @@
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\ServerChatix\bin\Debug\ServerChatix.exe.config
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\ServerChatix\bin\Debug\ServerChatix.exe
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\ServerChatix\bin\Debug\ServerChatix.pdb
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\ServerChatix\obj\Debug\ServerChatix.csproj.AssemblyReference.cache
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\ServerChatix\obj\Debug\ServerChatix.csproj.CoreCompileInputs.cache
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\ServerChatix\obj\Debug\ServerChatix.exe
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\ServerChatix\obj\Debug\ServerChatix.pdb

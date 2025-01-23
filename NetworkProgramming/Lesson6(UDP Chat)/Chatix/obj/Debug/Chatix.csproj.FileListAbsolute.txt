@@ -1,0 +1,10 @@
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\bin\Debug\Chatix.exe.config
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\bin\Debug\Chatix.exe
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\bin\Debug\Chatix.pdb
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\obj\Debug\Chatix.csproj.AssemblyReference.cache
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\obj\Debug\Chatix.Form1.resources
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\obj\Debug\Chatix.Properties.Resources.resources
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\obj\Debug\Chatix.csproj.GenerateResource.cache
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\obj\Debug\Chatix.csproj.CoreCompileInputs.cache
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\obj\Debug\Chatix.exe
+D:\ITStep\NetworkProgramming\Lesson6(UDP Chat)\Chatix\obj\Debug\Chatix.pdb
