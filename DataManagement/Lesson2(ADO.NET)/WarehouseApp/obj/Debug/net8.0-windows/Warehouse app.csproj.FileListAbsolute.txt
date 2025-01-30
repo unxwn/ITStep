@@ -1,0 +1,65 @@
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Warehouse app.exe
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Warehouse app.deps.json
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Warehouse app.runtimeconfig.json
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Warehouse app.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Warehouse app.pdb
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\System.ClientModel.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.csproj.AssemblyReference.cache
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse_app.Form1.resources
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.csproj.GenerateResource.cache
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.AssemblyInfoInputs.cache
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.AssemblyInfo.cs
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.csproj.CoreCompileInputs.cache
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.sourcelink.json
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehous.B7FEE069.Up2Date
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\refint\Warehouse app.dll
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.pdb
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\Warehouse app.genruntimeconfig.cache
+D:\ITStep\DataManagement\Lesson2(ADO.NET)\Warehouse app\obj\Debug\net8.0-windows\ref\Warehouse app.dll
