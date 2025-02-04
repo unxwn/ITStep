@@ -1,0 +1,3 @@
+- procedures for Categories and Suppliers (sp_InsertCategory, sp_UpdateCategory, ...)
+- add/edit forms for categories and suppliers
+- functionality for adding/editing category and supplier
