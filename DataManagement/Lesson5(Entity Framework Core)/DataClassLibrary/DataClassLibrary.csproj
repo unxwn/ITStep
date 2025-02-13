@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DomainClassLibrary\DomainClassLibrary.csproj" />
+    <Reference Include="DomainClassLibrary">
+      <HintPath>..\..\Lesson6\DomainClassLibrary\bin\Debug\net8.0\DomainClassLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
