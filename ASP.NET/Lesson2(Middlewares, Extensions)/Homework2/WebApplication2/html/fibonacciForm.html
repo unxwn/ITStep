@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci Calculation</title>
+</head>
+<body>
+    <h1>Fibonacci calculation</h1>
+    <label>Select calculation mode:</label><br />
+    <input type="radio" id="modeIndex" name="mode" value="index" checked>
+    <label for="modeIndex">By Position (index)</label><br />
+    <input type="radio" id="modeValue" name="mode" value="value">
+    <label for="modeValue">By Maximum Value</label>
+
+    <div id="formIndex">
+        <form method="get" action="/fibonacci">
+            <label for="index">Enter the position (index):</label>
+            <input type="number" id="index" name="index" required>
+            <button type="submit">Calculate by Index</button>
+        </form>
+    </div>
+
+    <div id="formValue" style="display:none;">
+        <form method="get" action="/fibonacci">
+            <label for="value">Enter the maximum value:</label>
+            <input type="number" id="value" name="value" required>
+            <button type="submit">Calculate by Value</button>
+        </form>
+    </div>
+
+    <script>
+        const modeRadios = document.getElementsByName("mode");
+        const formIndex = document.getElementById("formIndex");
+        const formValue = document.getElementById("formValue");
+
+        modeRadios.forEach(radio => {
+            radio.addEventListener("change", function () {
+                if (this.value === "index") {
+                    formIndex.style.display = "block";
+                    formValue.style.display = "none";
+                } else {
+                    formIndex.style.display = "none";
+                    formValue.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
