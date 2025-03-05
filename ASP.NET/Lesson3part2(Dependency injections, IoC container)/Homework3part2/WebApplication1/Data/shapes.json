@@ -1,0 +1,21 @@
+{
+  "$type": "System.Collections.Generic.List`1[[WebApplication1.Models.Abstractions.Shape, WebApplication1]], System.Private.CoreLib",
+  "$values": [
+    {
+      "$type": "WebApplication1.Models.Implementations.Circle, WebApplication1",
+      "Name": "Circle",
+      "Radius": 3.0
+    },
+    {
+      "$type": "WebApplication1.Models.Implementations.Square, WebApplication1",
+      "Side": 2.0,
+      "Name": "Square"
+    },
+    {
+      "$type": "WebApplication1.Models.Implementations.Triangle, WebApplication1",
+      "BaseLength": 4.0,
+      "Height": 5.0,
+      "Name": "Triangle"
+    }
+  ]
+}
