@@ -1,0 +1,22 @@
+﻿@page
+@model Homework6.Pages.CountriesModel
+@{
+}
+
+<head>
+    <link rel="stylesheet" href="./css/style.css" asp-append-version="true" />
+</head>
+
+<h1>Countries</h1>
+<table>
+    <tr><th>Name</th><th>Capital</th><th>Area</th><th>Population</th></tr>
+    @foreach (var country in Model.Countries)
+    {
+        <tr>
+            <td>@country.Name</td>
+            <td>@country.Capital</td>
+            <td>@country.Area.ToString("N0", System.Globalization.CultureInfo.InvariantCulture)</td>
+            <td>@country.Population.ToString("N0", System.Globalization.CultureInfo.InvariantCulture)</td>
+        </tr>
+    }
+</table>

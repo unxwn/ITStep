@@ -1,0 +1,23 @@
+﻿@page
+@model ASP_Meeting_6.Pages.IndexModel
+@{
+    string greatings = "Вітаємо Вас";
+    int year = DateTime.Now.Year;
+}
+
+<h1>@greatings на сторінці компанії @Model.CompanyName !</h1>
+<h2>Поточний час: @DateTime.Now.ToLongTimeString()</h2>
+<div>@(20) + @(30)</div>
+<div>@(20+30+year)</div>
+<div></div>
+<footer>
+    @{
+        bool isNight = false;
+        int currentHour = DateTime.Now.Hour;
+        if(currentHour<8 || currentHour > 20)
+        {
+            isNight = true;
+        }
+    }
+    <div style="background-color: @(isNight ? "cadetblue" : "yellow")">2023 - @year, @Model.CompanyName &copy;</div>
+</footer>

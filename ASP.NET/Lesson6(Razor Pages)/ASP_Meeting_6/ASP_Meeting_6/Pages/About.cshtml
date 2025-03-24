@@ -1,0 +1,22 @@
+﻿@page
+@model ASP_Meeting_6.Pages.AboutModel
+@{
+    int year = DateTime.Now.Year;
+    IEnumerable<string> architecturesStyles = new List<string>
+    {
+    "Razor Pages",
+    "MVC",
+    "Web API"
+    };
+}
+<h1>Про нашу компанію</h1>
+<h3>Ми використовуємо такі архітектурні стилі у розробці:</h3>
+<ul>
+    @foreach(string style in architecturesStyles)
+    {
+        <li>@style</li>
+    }
+</ul>
+<footer>
+    <div style="background-color:@(Model.IsNight ? "cadetblue": "yellow")">2023 - @year &copy;</div>
+</footer>

@@ -1,0 +1,52 @@
+﻿@page
+@model ASP_Meeting_6.Pages.Partners.IndexModel
+@{
+    int rating = 3;
+}
+<h1>Наші партнери</h1>
+<ul>
+    @foreach (string partner in Model.Partners)
+    {
+     <li>@partner</li>   
+    }
+</ul>
+@if (Model.Partners.Count() > 3)
+{
+    <h3>У нас більше 3х партнерів</h3>
+}
+else
+{
+    <h3>У нас менше 3х партнерів</h3>
+}
+@switch (DateTime.Now.DayOfWeek)
+{
+    case DayOfWeek.Monday:
+        <h4>Чудовий понеділок</h4>
+        break;
+    case DayOfWeek.Tuesday:
+        <h4>Надихаючий вівторок</h4>
+        break;
+    case DayOfWeek.Wednesday:
+        <h4>Майже середина тижня - середа</h4>
+        <hr />
+        break;
+    case DayOfWeek.Thursday:
+        <h4>Залишилось 2 робочих дня - четвер</h4>
+        break;
+    default:
+        <h4>Відпочинок близько!</h4>
+        break;
+}
+<div>
+@for(int i=1; i<=5; i++)
+{
+        @if (rating >= i)
+        {
+            <span>&starf;</span>
+        }
+        else
+        {
+            <span>&star;</span>
+        }
+    }
+</div>

@@ -1,0 +1,19 @@
+﻿@page
+@model Homework6.Pages.IndexModel
+@{
+}
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/restaurant">Restaurant</a>
+    <a href="/countries">Countries</a>
+</nav>
+
+<h2>Current day of the year: @Model.DayOfYear</h2>
+<h2>Restaurants:</h2>
+<ul>
+    @foreach (var restaurant in Model.Restaurants)
+    {
+        <li>@restaurant</li>
+    }
+</ul>
