@@ -1,0 +1,81 @@
+﻿@page
+@model Homework7.Pages.FilmsModel
+@{
+    ViewData["Title"] = "Розклад показів";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Назва</th>
+            <th>Режисер</th>
+            <th>Стиль</th>
+            <th>Опис</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Films != null)
+        {
+            foreach (var film in Model.Films)
+            {
+                <tr>
+                    <td>@film.Title</td>
+                    <td>@film.Director</td>
+                    <td>@film.Genre</td>
+                    <td>@film.Description</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <p>Немає даних для відображення</p>
+        }
+
+    </tbody>
+</table>
+
+<hr />
+
+@if (Model.Errors.Any())
+{
+    <div style="color: darkred"> Помилки:
+        <ul>
+            @foreach (var error in Model.Errors)
+            {
+                <li>@error</li>
+            }
+        </ul>
+    </div>
+}
+
+
+<h3>Додати новий фільм</h3>
+<form method="post">
+    <div class="form-group">
+        <label for="Title">Назва фільму</label>
+        <input type="text" id="Title" name="NewFilm.Title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Director">Режисер</label>
+        <input type="text" id="Director" name="NewFilm.Director" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Genre">Стиль</label>
+        <input type="text" id="Genre" name="NewFilm.Genre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Description">Короткий опис</label>
+        <textarea id="Description" name="NewFilm.Description" class="form-control"></textarea>
+    </div>
+    <br />
+    <button type="submit" class="btn">Додати фільм</button>
+</form>
+
+@if (ViewData["ErrorMessage"] != null)
+{
+    <script>
+        alert(@Html.Raw(Json.Serialize(ViewData["ErrorMessage"])));
+    </script>
+}

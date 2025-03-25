@@ -1,0 +1,17 @@
+﻿@page
+@model ASP_Meeting_7.Pages.Authors.IndexModel
+@{
+}
+
+<div class="container">
+    @foreach(var author in Model.Authors)
+    {
+        <div class="card w-100 mb-3">
+            <div class="card-body">
+                <h5 class="card-title">@author.Firstname @author.Surname</h5>
+                <p class="card-text">Рік народження: @author.YearOfBirth</p>
+                <a href="#" class="btn btn-primary">Button</a>
+            </div>
+        </div>
+    }
+</div>
