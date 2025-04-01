@@ -1,0 +1,16 @@
+﻿@page "{id}"
+@model ASP_Meeting_7.Pages.Authors.DeleteModel
+@{
+}
+<div class="container">
+    <h1>Ви дійсно хочете видалити автора @(Model.Author.Id). @Model.Author.Firstname 
+        @Model.Author.Surname
+    </h1>
+    <form method="post" style="display: inline" asp-antiforgery="true">
+        <input type="hidden" name="id" value="@Model.Author.Id" />
+        <button type="submit" class="btn btn-warning">Видалити</button>
+    </form>
+    <a asp-page="Index" class="btn btn-secondary">Повернутися</a>
+</div>
+
+

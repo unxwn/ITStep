@@ -1,0 +1,25 @@
+﻿@page
+@model ASP_Meeting_7.Pages.Authors.IndexModel
+@{
+}
+
+<div class="container">
+    <div>
+        <a href="/authors/create1">Додати автора</a>
+    </div>
+    @foreach(var author in Model.Authors)
+    {
+        <div class="card w-100 mb-3">
+            <div class="card-body">
+                <h5 class="card-title">@author.Firstname @author.Surname</h5>
+                <p class="card-text">Рік народження: @author.YearOfBirth</p>
+                <a href="/authors/edit/@author.Id" class="btn btn-primary">Редагувати</a>
+                <form method="post" style="display: inline">
+                    <input type="hidden" name="id" value="@author.Id">
+                    <button type="submit" class="btn btn-warning">Видалити</button>
+                    <a href="/authors/delete/@author.Id">Видалити з підтвердженням</a>
+                </form>
+            </div>
+        </div>
+    }
+</div>

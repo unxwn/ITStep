@@ -1,0 +1,26 @@
+﻿@page
+@model ASP_Meeting_7.Pages.Authors.CreateModel
+@{
+}
+<div class="container">
+    @if(HttpContext.Request.Method == "POST")
+    {
+        <h2>@Model.Message</h2>
+        <h4>Ваш вік: @Model.Age років</h4>
+    }
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label" for="fname">Firstname</label>
+            <input type="text" name="firstname" id="fname" 
+                class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="age">Age</label>
+            <input type="number" name="age" id="age"
+                   class="form-control" />
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Створити</button>
+        </div>
+    </form>
+</div>

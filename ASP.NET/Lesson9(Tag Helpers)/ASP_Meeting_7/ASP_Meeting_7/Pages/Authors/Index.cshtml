@@ -1,0 +1,50 @@
+﻿@page
+@model ASP_Meeting_7.Pages.Authors.IndexModel
+@{
+}
+
+<div class="container">
+    <div>
+        <a asp-page="Create1">Додати автора</a>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <form method="get">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <label class="col-form-label">По імені</label>
+                    </div>
+                    <div class="col-auto">
+                        <input asp-for="NameSearch" class="form-control" 
+                        />
+                    </div>
+                    <div class="col-auto">
+                        <label class="col-form-label">По року</label>
+                    </div>
+                    <div class="col-auto">
+                        <input asp-for="YearSearch" class="form-control" />
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-primary">Знайти</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @foreach (var author in Model.Authors)
+    {
+        <div class="card w-100 mb-3">
+            <div class="card-body">
+                <h5 class="card-title">@author.Firstname @author.Surname</h5>
+                <p class="card-text">Рік народження: @author.YearOfBirth</p>
+                <a asp-page="Edit" asp-route-id="@author.Id" class="btn btn-primary">Редагувати</a>
+                <form method="post" style="display: inline">
+                    <input type="hidden" name="id" value="@author.Id">
+                    <button type="submit" class="btn btn-warning">Видалити</button>
+                    <a asp-page="Delete" asp-route-id="@author.Id">Видалити з підтвердженням</a>
+                </form>
+            </div>
+        </div>
+    }
+</div>

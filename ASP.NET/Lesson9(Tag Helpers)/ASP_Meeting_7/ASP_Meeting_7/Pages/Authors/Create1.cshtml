@@ -1,0 +1,48 @@
+﻿@page
+@model ASP_Meeting_7.Pages.Authors.Create1Model
+@{
+}
+<div class="container">
+    @if (HttpContext.Request.Method == "POST" && Model.Author is not null)
+    {
+        <h2>@(Model.Author.Id). @Model.Author.Firstname @Model.Author.Surname</h2>
+        <h4>Ваш рік народження: @Model.Author.YearOfBirth</h4>
+    }
+    @* @if (Model.ErrorMessages is not null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <ul>
+                @foreach (string error in Model.ErrorMessages)
+                {
+                    <li></li>
+                }
+            </ul>
+        </div>
+    } *@
+    @* Form tag-helper* *@
+    <form method="post" asp-antiforgery="true">
+        <div class="mb-3">
+            @* Label tag-helper *@
+            <label asp-for="Author.Firstname"></label>
+          @*   <label class="form-label" for="fname">Firstname</label> *@
+            <input asp-for="Author.Firstname" type="text"
+                   class="form-control"  />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" asp-for="Author.Surname"></label>
+            <input type="text" asp-for="Author.Surname"
+                   class="form-control" />
+        </div>
+        <div class="mb-3">
+           @*  @Html.LabelFor(t=>t.Author.YearOfBirth, new {id="yearLabel", @class="form-label"}) *@
+            <label class="form-label" asp-for="Author.YearOfBirth"> </label>
+            <input type="number" asp-for="Author.YearOfBirth"
+                   class="form-control" />
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Створити</button>
+        </div>
+    </form>
+    @* Anchor tag-helper *@
+    <a asp-page="Index" class="btn btn-outline-secondary">Повернутися</a>
+</div>

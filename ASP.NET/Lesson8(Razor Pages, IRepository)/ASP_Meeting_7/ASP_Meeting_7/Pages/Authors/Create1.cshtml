@@ -1,0 +1,42 @@
+﻿@page
+@model ASP_Meeting_7.Pages.Authors.Create1Model
+@{
+}
+<div class="container">
+    @if (HttpContext.Request.Method == "POST" && Model.Author is not null)
+    {
+        <h2>@(Model.Author.Id). @Model.Author.Firstname @Model.Author.Surname</h2>
+        <h4>Ваш рік народження: @Model.Author.YearOfBirth</h4>
+    }
+    @* @if (Model.ErrorMessages is not null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <ul>
+                @foreach (string error in Model.ErrorMessages)
+                {
+                    <li></li>
+                }
+            </ul>
+        </div>
+    } *@
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label" for="fname">Firstname</label>
+            <input type="text" name="firstname" id="fname"
+                   class="form-control" value="@Model.Author.Firstname" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="sname">Surname</label>
+            <input type="text" name="surname" id="sname"
+                   class="form-control" value="@Model.Author.Surname"/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="yearOfBirth">Age</label>
+            <input type="number" name="yearOfBirth" id="yearOfBirth"
+                   class="form-control" value="@Model.Author.YearOfBirth"/>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Створити</button>
+        </div>
+    </form>
+</div>
