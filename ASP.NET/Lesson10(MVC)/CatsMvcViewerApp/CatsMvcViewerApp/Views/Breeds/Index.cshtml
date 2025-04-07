@@ -1,0 +1,32 @@
+﻿@using CatsMvcViewerApp.Models
+@model List<Breed>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Перелік порід</h1>
+@if (Model is null || Model.Count == 0)
+{
+    <h2>Породи відсутні</h2>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Назва породи</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Breed breed in Model)
+            {
+                <tr>
+                    <td>@breed.Id</td>
+                    <td>@breed.BreedName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

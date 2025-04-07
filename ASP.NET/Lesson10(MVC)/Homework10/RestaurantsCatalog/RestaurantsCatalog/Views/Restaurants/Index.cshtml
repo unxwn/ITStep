@@ -1,0 +1,38 @@
+﻿@model IEnumerable<RestaurantsCatalog.Models.Restaurant>
+@{
+    ViewData["Title"] = "Список ресторанів";
+}
+
+<h2>Ресторани Тернополя</h2>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Додати ресторан</a>
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Назва</th>
+            <th>Опис</th>
+            <th>Адреса</th>
+            <th>Телефон</th>
+            <th>Час роботи</th>
+            <th>Категорія</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var restaurant in Model)
+        {
+            <tr>
+                <td>@restaurant.Name</td>
+                <td>@restaurant.Description</td>
+                <td>@restaurant.Address</td>
+                <td>@restaurant.Phone</td>
+                <td>@restaurant.WorkingHours</td>
+                <td>@restaurant.Category.Name</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@restaurant.Id" class="btn btn-info btn-sm">Деталі</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,34 @@
+﻿@model RestaurantsCatalog.Models.Category
+@{
+    ViewData["Title"] = "Деталі категорії";
+}
+
+<h2>@Model.Name</h2>
+<h4>Ресторани у категорії</h4>
+@if (Model.Restaurants.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Назва</th>
+                <th>Опис</th>
+                <th>Адреса</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var restaurant in Model.Restaurants)
+            {
+                <tr>
+                    <td>@restaurant.Name</td>
+                    <td>@restaurant.Description</td>
+                    <td>@restaurant.Address</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Немає ресторанів у даній категорії.</p>
+}
+<a asp-action="Index" class="btn btn-secondary">Назад</a>
