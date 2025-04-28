@@ -1,0 +1,56 @@
+﻿@model EditCatVM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Cat</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CatDTO.Id" />
+            <input type="hidden" asp-for="Image" />
+            <div class="form-group">
+                <label asp-for="CatDTO.Name" class="control-label"></label>
+                <input asp-for="CatDTO.Name" class="form-control" />
+                <span asp-validation-for="CatDTO.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CatDTO.BreedId" class="control-label"></label>
+                <select asp-for="CatDTO.BreedId" class="form-control" asp-items="Model.Breeds"></select>
+                <span asp-validation-for="CatDTO.BreedId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CatDTO.Gender" class="control-label"></label>
+                <select asp-for="CatDTO.Gender" class="form-control"
+                asp-items="Model.Genders"></select>
+                <span asp-validation-for="CatDTO.Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="CatDTO.IsVacinated" />
+                    @Html.DisplayNameFor(model => model.CatDTO.IsVacinated)
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="photo" class="control-label"></label>
+                <input type="file" name="photo" class="form-control" id="photo" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
