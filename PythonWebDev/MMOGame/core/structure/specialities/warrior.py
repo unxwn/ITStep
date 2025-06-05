@@ -1,7 +1,7 @@
+from core.structure.base.hero import Hero
+
 from abc import ABC
 from typing import final
-
-from core.structure.base.hero import Hero
 
 class Warrior(Hero, ABC):
     print(super().name)

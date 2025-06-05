@@ -1,4 +1,4 @@
-from base.hero import Hero
+from core.structure.base.hero import Hero
 from abc import ABC
 from random import randint
 from typing import final
