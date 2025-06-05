@@ -3,7 +3,6 @@ from abc import ABC
 from typing import final
 
 class Warrior(Hero, ABC):
-    print(super().name)
     def __init__(self, name: str, hp: int, max_attack: int, armor: int) -> None:
         super().__init__(name, hp, max_attack)
         self.armor = armor

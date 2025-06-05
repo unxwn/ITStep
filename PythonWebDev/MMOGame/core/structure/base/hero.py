@@ -70,7 +70,7 @@ class Hero(ABC):
         return f"Hero(name=={self.name!r}, hp={self.hp}, max_attack={self.max_attack}, is_alive={self.is_alive})"
 
     def __str__(self) -> str:
-        return f"{self.name}, hp:{self}, alive:{'Alive' if self.is_alive else 'Dead'}"
+        return f"{self.name}, hp:{self.hp}, alive:{'Alive' if self.is_alive else 'Dead'}"
 
     def take_damage(self, damage: int) -> None:
         self.hp -= max(damage, 0)
