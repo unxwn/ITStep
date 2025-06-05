@@ -1,6 +1,6 @@
 from abc import abstractmethod, ABC
+from random import randint
 from typing import final, Final
-
 
 class Hero(ABC):
     def __init__(self, name: str, hp: int, max_attack: int) -> None:
@@ -75,7 +75,7 @@ class Hero(ABC):
     def take_damage(self, damage: int) -> None:
         self.hp -= max(damage, 0)
 
-    def make_attack(self, damage: int) -> None:
+    def make_attack(self) -> int:
         if self.is_alive:
             return randint(0, self.max_attack)
         return 0
