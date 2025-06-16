@@ -215,13 +215,36 @@ def note_create(request, board_id):
 @login_required
 def note_detail(request, board_id, note_id):
     board = get_object_or_404(Board, id=board_id)
-    note = get_object_or_404(Note, id=note_id, board=board)
+    note = get_object_or_404(
+        Note.objects.select_related('author', 'category', 'board')
+        .prefetch_related(
+            'checklist_items',
+            'links',
+            'notetag_set__tag'  # Виправлено зв'язок з тегами
+        ),
+        id=note_id,
+        board=board
+    )
 
     if not board.members.filter(id=request.user.id).exists():
-        messages.error(request, 'You do not have access to this board.')
-        return redirect('core:boards_list')
+        return render(request, '403.html', status=403)
 
-    return render(request, 'core/pages/note_detail.html', {'note': note, 'board': board})
+    # Для чеклістів: обчислюємо кількість виконаних пунктів
+    completed_count = 0
+    if note.note_type == 'checklist':
+        completed_count = note.checklist_items.filter(is_completed=True).count()
+
+    # Отримуємо список тегів через проміжну модель
+    tags = [notetag.tag for notetag in note.notetag_set.all()]
+
+    context = {
+        'note': note,
+        'board': board,
+        'completed_checklist_items_count': completed_count,
+        'tags': tags,  # Додаємо теги в контекст
+        'can_edit': request.user == note.author or request.user == board.owner,
+    }
+    return render(request, 'core/pages/note_detail.html', context)
 
 
 @login_required
@@ -246,21 +269,160 @@ def note_update(request, board_id, note_id):
 
 
 @login_required
-def note_delete(request, board_id, note_id):
-    board = get_object_or_404(Board, id=board_id)
-    note = get_object_or_404(Note, id=note_id, board=board)
+@require_POST
+def toggle_checklist_item(request, item_id):
+    item = get_object_or_404(ChecklistItem, id=item_id)
+    note = item.note
 
-    if not board.members.filter(id=request.user.id).exists():
-        messages.error(request, 'You do not have access to this board.')
-        return redirect('core:boards_list')
+    if not note.board.members.filter(id=request.user.id).exists():
+        return JsonResponse({'error': 'Permission denied'}, status=403)
+
+    item.is_completed = not item.is_completed
+    item.save()
+    return JsonResponse({
+        'success': True,
+        'is_completed': item.is_completed
+    })
+
+
+@login_required
+@require_POST
+def note_archive(request, note_id):
+    note = get_object_or_404(Note, id=note_id)
+
+    if request.user != note.author and request.user != note.board.owner:
+        return JsonResponse({'error': 'Permission denied'}, status=403)
+
+    note.is_archived = not note.is_archived
+    note.save()
+    return JsonResponse({
+        'success': True,
+        'is_archived': note.is_archived
+    })
+
+
+@login_required
+def note_delete(request, board_id, note_id):
+    note = get_object_or_404(Note, id=note_id, board_id=board_id)
+
+    if request.user != note.author and request.user != note.board.owner:
+        return render(request, '403.html', status=403)
 
     if request.method == 'POST':
-        note_title = note.title
         note.delete()
-        messages.success(request, f'Note "{note_title}" deleted successfully!')
+        return redirect('core:board_detail', board_id=board_id)
+
+    return render(request, 'core/confirm_delete.html', {'note': note})
+
+
+@login_required
+@require_POST
+def board_add_member(request, board_id):
+    """Add a new member to the board"""
+    board = get_object_or_404(Board, id=board_id)
+
+    if not (request.user == board.owner or
+            board.board_memberships.filter(user=request.user, role__in=['owner', 'admin']).exists()):
+        return JsonResponse({'error': 'Permission denied'}, status=403)
+
+    try:
+        data = json.loads(request.body)
+        username = data.get('username', '').strip()
+        role = data.get('role', 'viewer')
+
+        if not username:
+            return JsonResponse({'error': 'Username is required'}, status=400)
+
+        try:
+            if '@' in username:
+                user = User.objects.get(email=username)
+            else:
+                user = User.objects.get(username=username)
+        except User.DoesNotExist:
+            return JsonResponse({'error': 'User not found'}, status=404)
+
+        if BoardMember.objects.filter(board=board, user=user).exists():
+            return JsonResponse({'error': 'User is already a member of this board'}, status=400)
+
+        BoardMember.objects.create(board=board, user=user, role=role)
+
+        return JsonResponse({
+            'success': True,
+            'message': f'{user.username} added to board successfully'
+        })
+
+    except json.JSONDecodeError:
+        return JsonResponse({'error': 'Invalid JSON'}, status=400)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+@require_POST
+def board_remove_member(request, board_id, membership_id):
+    """Remove a member from the board"""
+    board = get_object_or_404(Board, id=board_id)
+    membership = get_object_or_404(BoardMember, id=membership_id, board=board)
+
+    if not (request.user == board.owner or
+            board.board_memberships.filter(user=request.user, role__in=['owner', 'admin']).exists()):
+        return JsonResponse({'error': 'Permission denied'}, status=403)
+
+    if membership.role == 'owner':
+        return JsonResponse({'error': 'Cannot remove board owner'}, status=400)
+
+    if request.user == board.owner and membership.user == request.user:
+        return JsonResponse({'error': 'Board owner cannot remove themselves'}, status=400)
+
+    try:
+        username = membership.user.username
+        membership.delete()
+
+        return JsonResponse({
+            'success': True,
+            'message': f'{username} removed from board successfully'
+        })
+
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def board_settings(request, board_id):
+    """Board settings page with advanced options"""
+    board = get_object_or_404(Board, id=board_id)
+
+    if not (request.user == board.owner or
+            board.board_memberships.filter(user=request.user, role__in=['owner', 'admin']).exists()):
+        messages.error(request, 'You do not have permission to access board settings.')
         return redirect('core:board_detail', board.id)
 
-    return render(request, 'core/pages/note_confirm_delete.html', {'note': note, 'board': board})
+    if request.method == 'POST':
+        if 'transfer_ownership' in request.POST:
+            new_owner_username = request.POST.get('new_owner_username')
+            if new_owner_username and request.user == board.owner:
+                try:
+                    new_owner = User.objects.get(username=new_owner_username)
+                    if BoardMember.objects.filter(board=board, user=new_owner).exists():
+                        # Transfer ownership
+                        board.owner = new_owner
+                        board.save()
+
+                        # Update memberships
+                        BoardMember.objects.filter(board=board, user=new_owner).update(role='owner')
+                        BoardMember.objects.filter(board=board, user=request.user).update(role='admin')
+
+                        messages.success(request, f'Board ownership transferred to {new_owner.username}')
+                        return redirect('core:board_detail', board.id)
+                    else:
+                        messages.error(request, 'User must be a board member to become owner')
+                except User.DoesNotExist:
+                    messages.error(request, 'User not found')
+
+    return render(request, 'core/pages/board_settings.html', {
+        'board': board,
+        'is_owner': request.user == board.owner,
+    })
 
 
 @login_required
@@ -283,4 +445,3 @@ def toggle_checklist_item(request, item_id):
         return JsonResponse({'is_completed': item.is_completed})
     except json.JSONDecodeError:
         return JsonResponse({'error': 'Invalid JSON'}, status=400)
-
