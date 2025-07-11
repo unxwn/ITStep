@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Upload File";
+}
+
+<h2>Upload File</h2>
+
+<a asp-action="Index" class="btn btn-secondary mb-3">← Back to Files</a>
+
+<form asp-action="Upload" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <input type="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Upload</button>
+</form>
