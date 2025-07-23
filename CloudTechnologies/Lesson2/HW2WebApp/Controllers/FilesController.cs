@@ -9,11 +9,13 @@ namespace HW2WebApp.Controllers
     {
         private readonly AppDbContext _db;
         private readonly BlobStorageService _blobSvc;
+        private readonly QueueService _queueSvc;
 
-        public FilesController(AppDbContext db, BlobStorageService blobSvc)
+        public FilesController(AppDbContext db, BlobStorageService blobSvc, QueueService queueSvc)
         {
             _db = db;
             _blobSvc = blobSvc;
+            _queueSvc = queueSvc;
         }
 
         public IActionResult Index()
@@ -31,7 +33,7 @@ namespace HW2WebApp.Controllers
             if (!ModelState.IsValid || file == null || file.Length == 0)
                 return View();
 
-            var (blobName, url) = await _blobSvc.UploadAsync(file);
+            var (blobName, url, ct) = await _blobSvc.UploadOriginalAsync(file);
 
             var record = new FileRecord
             {
@@ -43,6 +45,8 @@ namespace HW2WebApp.Controllers
             _db.Files.Add(record);
             await _db.SaveChangesAsync();
 
+            await _queueSvc.SendMessageAsync(blobName);
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -52,7 +56,7 @@ namespace HW2WebApp.Controllers
             if (file == null)
                 return NotFound();
 
-            var blob = _blobSvc.GetBlobClient(file.BlobName);
+            var blob = _blobSvc.GetBlobClient(file.BlobName, file.ContentType);
             var stream = new MemoryStream();
             await blob.DownloadToAsync(stream);
             stream.Position = 0;

@@ -1,4 +1,5 @@
 using Azure.Storage.Blobs;
+using Azure.Storage.Queues;
 using HW2WebApp.Data;
 using HW2WebApp.Services;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +17,12 @@ builder.Services.AddSingleton(
     new BlobServiceClient(builder.Configuration.GetConnectionString("AzureBlobStorage"))
     );
 
+builder.Services.AddSingleton(sp =>
+    new QueueServiceClient(builder.Configuration.GetConnectionString("AzureBlobStorage"))
+    );
+
 builder.Services.AddScoped<BlobStorageService>();
+builder.Services.AddScoped<QueueService>();
 
 var app = builder.Build();
 
