@@ -10,6 +10,7 @@ using SixLabors.ImageSharp.Processing;
 var config = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: false)
     .AddUserSecrets<Program>()
+    .AddEnvironmentVariables();
     .Build();
 
 string connStr = config.GetConnectionString("AzureStorageAccount")!;
