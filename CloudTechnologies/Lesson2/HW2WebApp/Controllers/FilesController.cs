@@ -42,6 +42,7 @@ namespace HW2WebApp.Controllers
                 Url = url,
                 ContentType = file.ContentType
             };
+
             _db.Files.Add(record);
             await _db.SaveChangesAsync();
 

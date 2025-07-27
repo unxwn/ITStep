@@ -10,19 +10,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
+    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultSQLiteConnection"))
 );
 
 builder.Services.AddSingleton(
-    new BlobServiceClient(builder.Configuration.GetConnectionString("AzureBlobStorage"))
+    new BlobServiceClient(builder.Configuration.GetConnectionString("AzureStorageAccount"))
     );
 
-builder.Services.AddSingleton(sp =>
-    new QueueServiceClient(builder.Configuration.GetConnectionString("AzureBlobStorage"))
-    );
+//builder.Services.AddSingleton(sP =>
+//    new QueueServiceClient(builder.Configuration.GetConnectionString("AzureStorageAccount"))
+//    );
 
-builder.Services.AddScoped<BlobStorageService>();
-builder.Services.AddScoped<QueueService>();
+builder.Services.AddScoped<BlobStorageService>(); // maybe singnleton??
+builder.Services.AddScoped<QueueService>(); // maybe singnleton??
 
 var app = builder.Build();
 
