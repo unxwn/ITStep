@@ -9,22 +9,24 @@ using SixLabors.ImageSharp.Processing;
 
 var config = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: false)
+    .AddUserSecrets<Program>()
     .Build();
 
-string connStr = config.GetConnectionString("AzureBlobStorage");
-string dbPath = config.GetConnectionString("DefaultConnection");
+string connStr = config.GetConnectionString("AzureStorageAccount")!;
+string dbPath = config.GetConnectionString("DefaultSQLiteConnection")!;
+
 string queueNam = config["QueueSettings:QueueName"]!;
 string origCont = config["BlobSettings:OriginalContainer"]!;
 string compCont = config["BlobSettings:CompressedContainer"]!;
 
 var blobSvc = new BlobServiceClient(connStr);
-var orig = blobSvc.GetBlobContainerClient(origCont);
-var comp = blobSvc.GetBlobContainerClient(compCont);
-var queueCli = new QueueClient(connStr, queueNam);
+var origContainer = blobSvc.GetBlobContainerClient(origCont);
+var compContainer = blobSvc.GetBlobContainerClient(compCont);
+var queueClient = new QueueClient(connStr, queueNam);
 
-orig.CreateIfNotExists();
-comp.CreateIfNotExists();
-queueCli.CreateIfNotExists();
+origContainer.CreateIfNotExists();
+compContainer.CreateIfNotExists();
+queueClient.CreateIfNotExists();
 
 var cts = new CancellationTokenSource();
 bool paused = false;
@@ -47,7 +49,7 @@ async Task ProcessLoopAsync()
             continue;
         }
 
-        QueueMessage[] msgs = await queueCli.ReceiveMessagesAsync(
+        QueueMessage[] msgs = await queueClient.ReceiveMessagesAsync(
             maxMessages: 3,
             visibilityTimeout: TimeSpan.FromMinutes(5),
             cancellationToken: cts.Token);
@@ -64,8 +66,8 @@ async Task ProcessLoopAsync()
 
             try
             {
-                var origBlob = orig.GetBlobClient(blobName);
-                using var inStream = await origBlob.OpenReadAsync(new Azure.Storage.Blobs.Models.BlobOpenReadOptions(false), cts.Token);
+                var origBlob = origContainer.GetBlobClient(blobName);
+                await using var inStream = await origBlob.OpenReadAsync(new Azure.Storage.Blobs.Models.BlobOpenReadOptions(false), cts.Token);
 
                 using var image = Image.Load(inStream);
                 if (preserve)
@@ -73,8 +75,8 @@ async Task ProcessLoopAsync()
                 else
                     image.Mutate(x => x.Resize(width, height));
 
-                var compBlob = comp.GetBlobClient(blobName);
-                using var outStream = new MemoryStream();
+                var compBlob = compContainer.GetBlobClient(blobName);
+                await using var outStream = new MemoryStream();
                 await image.SaveAsJpegAsync(outStream, cts.Token);
                 outStream.Position = 0;
                 await compBlob.UploadAsync(outStream, new BlobUploadOptions
@@ -86,7 +88,7 @@ async Task ProcessLoopAsync()
                 }, cancellationToken: cts.Token);
 
 
-                await queueCli.DeleteMessageAsync(msg.MessageId, msg.PopReceipt, cts.Token);
+                await queueClient.DeleteMessageAsync(msg.MessageId, msg.PopReceipt, cts.Token);
 
                 Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] ✔ Compressed {blobName}");
             }
@@ -154,7 +156,7 @@ async Task SyncQueueAsync()
     Console.WriteLine("=== Sync started ===");
 
     var compressedSet = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-    await foreach (var b in comp.GetBlobsAsync(cancellationToken: cts.Token))
+    await foreach (var b in compContainer.GetBlobsAsync(cancellationToken: cts.Token))
         compressedSet.Add(b.Name);
 
     // db request
@@ -163,7 +165,7 @@ async Task SyncQueueAsync()
     await sqlite.OpenAsync(cts.Token);
 
     var cmd = sqlite.CreateCommand();
-    cmd.CommandText = "SELECT BlobName, ContentType FROM Files WHERE BlobName LIKE 'image/%'";
+    cmd.CommandText = "SELECT BlobName, ContentType FROM Files WHERE ContentType LIKE 'image/%'";
     await using var reader = await cmd.ExecuteReaderAsync(cts.Token);
 
     while (await reader.ReadAsync(cts.Token))
@@ -171,7 +173,7 @@ async Task SyncQueueAsync()
         string blobName = reader.GetString(0);
         if (!compressedSet.Contains(blobName))
         {
-            await queueCli.SendMessageAsync(blobName, cancellationToken: cts.Token);
+            await queueClient.SendMessageAsync(blobName, cancellationToken: cts.Token);
             enqueued++;
         }
     }
