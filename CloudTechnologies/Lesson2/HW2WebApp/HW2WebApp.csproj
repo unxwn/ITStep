@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>88c92921-8278-409b-a799-c16e55ba46f1</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +15,14 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\ITStep\CloudTechnologies\Lesson2\HW2WebApp\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\ITStep\CloudTechnologies\Lesson2\HW2WebApp\.editorconfig" />
   </ItemGroup>
 
 </Project>
