@@ -20,6 +20,7 @@ Set these values in `appsettings.json` or User Secrets:
     "AzureStorageAccount": "<your-azure-storage-connection-string>"
   },
   "APPLICATIONINSIGHTS_CONNECTION_STRING": "<your-app-insights-connection-string>",
+  "AzureWebJobsStorage": "<your-web-jobs-storage-connection-string(storage account)>",
   "BlobSettings": {
     "InputContainerName": "original-files",
     "OutputContainerName": "compressed-images"
