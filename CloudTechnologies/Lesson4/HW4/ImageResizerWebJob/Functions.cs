@@ -62,6 +62,6 @@ public class Functions
 
         await outputBlobClient.UploadAsync(outputStream, overwrite: true);
         logger.LogInformation("{Blob} | Successfully resized to {W}x{H} and uploaded to {Container}",
-            blobName, _width, _height, _outputContainerClient);
+            blobName, _width, _height, _outputContainerClient.Name);
     }
 }
