@@ -1,12 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Azure.Storage.Blobs;
+using Azure.Storage.Queues;
+using ImageResizerWebJob;
+using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.ApplicationInsights.Extensibility;
-using Azure.Storage.Queues;
-using Azure.Storage.Blobs;
-using ImageResizerWebJob;
 
 var host = new HostBuilder()
     .ConfigureAppConfiguration((ctx, cfg) =>
@@ -23,7 +23,7 @@ var host = new HostBuilder()
     .ConfigureLogging((ctx, log) =>
     {
         log.AddConsole();
-        string aIConnStr = ctx.Configuration.GetConnectionString("ApplicationInsights")
+        string aIConnStr = ctx.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]
             ?? throw new InvalidOperationException("You should provide 'ApplicationInsights' in app configuration!");
 
         if (!string.IsNullOrWhiteSpace(aIConnStr))
@@ -39,9 +39,24 @@ var host = new HostBuilder()
                 }
             );
         }
+
+        //log.ClearProviders();
+        //log.AddConsole();
+        //log.AddApplicationInsights();
     })
     .ConfigureServices((ctx, services) =>
     {
+        //// ApplicationInsights + logging
+        //string aIConnStr = ctx.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]
+        //    ?? throw new InvalidOperationException("You should provide 'ApplicationInsights' in app configuration!");
+
+        //services.AddApplicationInsightsTelemetryWorkerService(o =>
+        //{
+        //    o.ConnectionString = aIConnStr;
+        //    o.EnableQuickPulseMetricStream = true; // Live Metrics
+        //});
+
+        // Storage account
         string storageConn = ctx.Configuration.GetConnectionString("AzureStorageAccount")
                              ?? throw new InvalidOperationException("You should provide 'AzureStorageAccount' in app configuration!");
 
