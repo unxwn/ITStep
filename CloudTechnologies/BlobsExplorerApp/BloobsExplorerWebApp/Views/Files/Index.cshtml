@@ -1,0 +1,30 @@
+﻿@model IEnumerable<HW2WebApp.Models.FileRecord>
+
+@{
+    ViewData["Title"] = "Uploaded Files";
+}
+
+<h2>Uploaded Files</h2>
+
+<a href="/Files/Upload" class="btn btn-primary mb-3">Upload New File</a>
+
+<div class="row">
+    @foreach (var file in Model)
+    {
+        <div class="mb-4">
+            @if (file.ContentType.StartsWith("image/"))
+            {
+                <a href="@Url.Action("Download", new { id = file.Id })" target="_blank">
+                    <img src="@Url.Action("Download", new { id = file.Id })"
+                         style="max-height:1000px;" class="img-thumbnail" />
+                </a>
+            }
+            else
+            {
+                <p>@file.OriginalName</p>
+                <a class="btn btn-primary" href="@Url.Action("Download", new { id = file.Id })">Download</a>
+            }
+        </div>
+        <hr />
+    }
+</div>
