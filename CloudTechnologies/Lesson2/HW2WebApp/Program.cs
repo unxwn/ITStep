@@ -10,13 +10,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultSQLiteConnection"))
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("AzureSQLDb")) // Azure
+    //opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultSQLiteConnectionLocalTest")) // Azurite
 );
 
 builder.Services.AddSingleton(
-    new BlobServiceClient(builder.Configuration.GetConnectionString("AzureStorageAccount"))
+    new BlobServiceClient(builder.Configuration.GetConnectionString("AzureStorageAccount")) // Azure
+    //new BlobServiceClient(builder.Configuration.GetConnectionString("AzuriteEmulator")) // Azurite
     );
 
+// Не потрібно, бо отримуємо безпосередньо в QueueService
 //builder.Services.AddSingleton(sP =>
 //    new QueueServiceClient(builder.Configuration.GetConnectionString("AzureStorageAccount"))
 //    );
