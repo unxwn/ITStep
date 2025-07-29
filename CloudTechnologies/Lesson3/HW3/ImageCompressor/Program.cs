@@ -10,20 +10,20 @@ using SixLabors.ImageSharp.Processing;
 var config = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: false)
     .AddUserSecrets<Program>()
-    .AddEnvironmentVariables();
+    .AddEnvironmentVariables()
     .Build();
 
-string connStr = config.GetConnectionString("AzureStorageAccount")!;
+string azuriteConnStr = config.GetConnectionString("AzuriteEmulator")!;
 string dbPath = config.GetConnectionString("DefaultSQLiteConnection")!;
 
 string queueNam = config["QueueSettings:QueueName"]!;
 string origCont = config["BlobSettings:OriginalContainer"]!;
 string compCont = config["BlobSettings:CompressedContainer"]!;
 
-var blobSvc = new BlobServiceClient(connStr);
+var blobSvc = new BlobServiceClient(azuriteConnStr);
 var origContainer = blobSvc.GetBlobContainerClient(origCont);
 var compContainer = blobSvc.GetBlobContainerClient(compCont);
-var queueClient = new QueueClient(connStr, queueNam);
+var queueClient = new QueueClient(azuriteConnStr, queueNam);
 
 origContainer.CreateIfNotExists();
 compContainer.CreateIfNotExists();
