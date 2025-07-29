@@ -14,11 +14,12 @@ namespace HW2WebApp.Migrations
                 name: "Files",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    BlobName = table.Column<string>(type: "TEXT", nullable: false),
-                    Url = table.Column<string>(type: "TEXT", nullable: false),
-                    ContentType = table.Column<string>(type: "TEXT", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    BlobName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OriginalName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Url = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ContentType = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
