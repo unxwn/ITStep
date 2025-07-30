@@ -46,7 +46,10 @@ namespace HW2WebApp.Controllers
             _db.Files.Add(record);
             await _db.SaveChangesAsync();
 
-            await _queueSvc.SendMessageAsync(blobName);
+            if (file.ContentType.StartsWith("image/"))
+            {
+                await _queueSvc.SendMessageAsync(blobName);
+            }
 
             return RedirectToAction(nameof(Index));
         }
