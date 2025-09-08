@@ -40,5 +40,11 @@ namespace AirbnbPricePred.WebApp.Controllers
 
             return View("Result", result);
         }
+
+        [HttpGet]
+        public IActionResult Privacy()
+        {
+            return View("Privacy");
+        }
     }
 }
