@@ -4,34 +4,33 @@
     using Azure.Storage.Queues;
     using ImageAnalyzerAI.Web.Models;
     using ImageAnalyzerAI.Web.Services.Abstraction;
-    using Microsoft.Extensions.Options;
     using System.Text.Json;
-
-    public class AzureStorageOptions
-    {
-        public string ConnectionString { get; set; } = default!;
-        public string ImagesContainer { get; set; } = "images";
-        public string MetadataContainer { get; set; } = "metadata";
-        public string QueueName { get; set; } = "images-analysis-queue";
-    }
 
     public class AzureStorageService : IStorageService
     {
-        private readonly AzureStorageOptions _opts;
         private readonly BlobContainerClient _imagesContainer;
         private readonly BlobContainerClient _metadataContainer;
         private readonly QueueClient _queueClient;
 
-        public AzureStorageService(IOptions<AzureStorageOptions> opts)
+        public AzureStorageService(BlobServiceClient blobServiceClient, IConfiguration configuration)
         {
-            _opts = opts.Value;
-            var blobService = new BlobServiceClient(_opts.ConnectionString);
-            _imagesContainer = blobService.GetBlobContainerClient(_opts.ImagesContainer);
-            _metadataContainer = blobService.GetBlobContainerClient(_opts.MetadataContainer);
+            string? connectionString = configuration.GetValue<string>("AzureStorage:ConnectionString") ?? 
+                throw new InvalidOperationException("AzureStorage:ConnectionString must be configured.");
+
+            var blobService = new BlobServiceClient(connectionString);
+
+            _imagesContainer = blobService.GetBlobContainerClient(configuration.GetValue<string>("AzureStorage:ImagesContainer")
+                ?? throw new InvalidOperationException("AzureStorage:ImagesContainer must be configured."));
+
+            _metadataContainer = blobService.GetBlobContainerClient(configuration.GetValue<string>("AzureStorage:MetadataContainer") ??
+                throw new InvalidOperationException("AzureStorage:MetadataContainer must be configured."));
+                
+
             _imagesContainer.CreateIfNotExists();
             _metadataContainer.CreateIfNotExists();
 
-            _queueClient = new QueueClient(_opts.ConnectionString, _opts.QueueName);
+            _queueClient = new QueueClient(connectionString, configuration.GetValue<string>("AzureStorage:QueueName") ??
+                throw new InvalidOperationException("AzureStorage:QueueName must be configured."));
             _queueClient.CreateIfNotExists();
         }
 

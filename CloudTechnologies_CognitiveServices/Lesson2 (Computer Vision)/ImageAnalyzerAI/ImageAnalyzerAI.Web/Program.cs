@@ -1,12 +1,24 @@
+using Azure.Storage.Blobs;
 using ImageAnalyzerAI.Web.Services.Abstraction;
 using ImageAnalyzerAI.Web.Services.Implementation;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration
+    .AddEnvironmentVariables()
+    .AddUserSecrets<Program>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddSingleton<IStorageService, AzureStorageService>();
+
+builder.Services.AddSingleton<BlobServiceClient>(sP =>
+{
+    var config = sP.GetRequiredService<IConfiguration>();
+    return new BlobServiceClient(config.GetValue<string>("AzureStorage:ConnectionString"));
+});
 
 var app = builder.Build();
 

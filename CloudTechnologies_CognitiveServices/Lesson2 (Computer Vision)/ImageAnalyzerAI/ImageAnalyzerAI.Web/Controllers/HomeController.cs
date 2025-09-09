@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using ImageAnalyzerAI.Web.Models;
 using ImageAnalyzerAI.Web.Services.Abstraction;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +18,11 @@ namespace ImageAnalyzerAI.Web.Controllers
             var items = await _storage.ListImagesAsync(q);
             ViewData["Query"] = q ?? string.Empty;
             return View(items);
+        }
+
+        public  IActionResult Privacy()
+        {
+            return View();
         }
 
         [HttpPost]
