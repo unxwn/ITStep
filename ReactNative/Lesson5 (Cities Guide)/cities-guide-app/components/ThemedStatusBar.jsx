@@ -1,6 +1,6 @@
 import { StatusBar } from "react-native";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 import Color from "color";
 
 export function ThemedStatusBar() {

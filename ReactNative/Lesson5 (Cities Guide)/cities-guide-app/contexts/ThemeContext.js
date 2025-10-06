@@ -3,15 +3,16 @@ import { useColorScheme } from "react-native";
 
 export const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
+const ThemeProvider = ({ children }) => {
   const colorScheme = useColorScheme();
 
   const defaultDarkTheme = {
     backgroundColor: "black",
     textColor: "white",
-    navbarBgColor: "#1c1c1e",
+    navbarBgColor: "#2c2c2fff",
     navbarTextColor: "white",
     borderColor: "#3a3a3c",
+    inputBgColor: "#3b3b3bff",
   };
 
   const defaultLightTheme = {
@@ -20,6 +21,7 @@ export const ThemeProvider = ({ children }) => {
     navbarBgColor: "f2f2f7",
     navbarTextColor: "black",
     borderColor: "#d1d1d6",
+    inputBgColor: "#adadb4ff",
   }
   
   const [theme, setTheme] = useState(
@@ -32,3 +34,5 @@ export const ThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
+
+export default ThemeProvider;

@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 export function ThemedView({ style, children, ...props }) {
   const { theme } = useContext(ThemeContext);

@@ -1,6 +1,6 @@
 import { Text } from "react-native";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 export function ThemedText({ style, ...props }) {
   const { theme } = useContext(ThemeContext);
