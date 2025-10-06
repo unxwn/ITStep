@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <ThemedView style={styles.container}>
       <ThemedText style={styles.title}>404 — Page not found</ThemedText>
-      <Link href="/(tabs)/index">
+      <Link href="/">
         <ThemedText>Go to Home</ThemedText>
       </Link>
     </ThemedView>
