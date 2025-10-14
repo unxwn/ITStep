@@ -8,7 +8,7 @@ import { ThemedText } from "../../../components/ThemedText";
 import { ThemedView } from "../../../components/ThemedView";
 
 export default function Settings() {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme, setThemeState } = useContext(ThemeContext);
 
   const [bg, setBg] = useState(parseColorToArray(theme?.backgroundColor, [255, 255, 255]));
   const [txt, setTxt] = useState(parseColorToArray(theme?.textColor, [0, 0, 0]));
@@ -27,7 +27,7 @@ export default function Settings() {
     newArr[index] = Math.round(value);
     g.setter(newArr);
 
-    setTheme({
+    setThemeState({
       ...theme,
       [g.themeKey]: rgbString(newArr),
     });
